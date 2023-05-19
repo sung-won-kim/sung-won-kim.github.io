@@ -1,26 +1,26 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: M.S. student in <a href='https://kse.kaist.ac.kr'>Graduate School of Data Science</a> at <a href='https://kaist.ac.kr'>KAIST</a>.
 
 profile:
-  align: right
-  image: prof_pic.jpg
+  align: left
+  image: profile.png
   image_circular: false # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
 
 news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
+latest_posts: false  # includes a list of the newest posts
+selected_papers: false # includes a list of papers marked as "selected={true}"
+educations: true
 social: true  # includes social icons at the bottom of the page
+work : true
+teaching : true
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I’m a Master’s degree candidate for <a href='https://kse.kaist.ac.kr'>Graduate School of Data Science</a> at <a href='https://kaist.ac.kr'>KAIST</a>, where I am fortunate to be advised by <a href='http://dsail.kaist.ac.kr/professor/'>Prof. Chanyoung Park</a>.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I'm actively on research with my best colleagues at <a href='http://dsail.kaist.ac.kr'>Data Science and Artificial Intelligence Lab</a>.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I am primarily focused on data mining and machine learning, with a particular interest in graph data analysis. My research is driven by exploring practical applications, such as few-shot learning, meta-learning, and other related areas.

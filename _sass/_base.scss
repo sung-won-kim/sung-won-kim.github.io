@@ -17,6 +17,7 @@ li,
 span,
 strong {
   color: var(--global-text-color);
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 hr {
@@ -24,6 +25,7 @@ hr {
 }
 
 table {
+
   td,
   th {
     font-size: 1rem;
@@ -140,6 +142,7 @@ blockquote {
 @media (min-width: 576px) {
   .profile {
     width: 30%;
+    box-shadow: none !important;
 
     .address {
       p {
@@ -659,6 +662,7 @@ footer.sticky-bottom {
 
       .badges {
         padding-bottom: 0.5rem;
+
         span {
           display: inline-block;
           color: $black-color;
@@ -905,7 +909,8 @@ progress::-moz-progress-bar {
     }
   }
 
-  .dropdown-item.active, .dropdown-item:active {
+  .dropdown-item.active,
+  .dropdown-item:active {
     background-color: var(--global-hover-color);
     color: var(--global-hover-text-color) !important;
 
@@ -947,6 +952,7 @@ nav[data-toggle="toc"] {
 
 /* small screens */
 @media (max-width: 576px) {
+
   /* override stickyness so that the navigation does not follow scrolling */
   nav[data-toggle="toc"] {
     visibility: hidden;
@@ -965,7 +971,12 @@ nav[data-toggle="toc"] {
       color: var(--global-tip-block-text);
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       color: var(--global-tip-block-title);
     }
   }
@@ -978,7 +989,12 @@ nav[data-toggle="toc"] {
       color: var(--global-warning-block-text);
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       color: var(--global-warning-block-title);
     }
   }
@@ -991,7 +1007,12 @@ nav[data-toggle="toc"] {
       color: var(--global-danger-block-text);
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       color: var(--global-danger-block-title);
     }
   }
