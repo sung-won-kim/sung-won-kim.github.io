@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://sung-won-kim.github.io/sung-won-kim/sitemap.xml
+Sitemap: https://sung-won-kim.github.io/sitemap.xml
