@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Two papers got accepted at <a href='https://kdd.org/kdd2023/'>KDD 2023</a>.
+A paper got accepted at <a href='https://kdd.org/kdd2023/'>KDD 2023</a>.
