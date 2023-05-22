@@ -19,7 +19,7 @@ work : true
 teaching : true
 ---
 
-I’m a Master’s degree candidate for <a href='https://kse.kaist.ac.kr'>Graduate School of Data Science</a> at <a href='https://kaist.ac.kr'>KAIST</a>, where I am fortunate to be advised by <a href='http://dsail.kaist.ac.kr/professor/'>Prof. Chanyoung Park</a>.
+I'm a master student in <a href='https://kse.kaist.ac.kr'>Graduate School of Data Science</a> at <a href='https://kaist.ac.kr'>KAIST</a>, where I am fortunate to be advised by <a href='http://dsail.kaist.ac.kr/professor/'>Prof. Chanyoung Park</a>.
 
 I'm actively on research with my best colleagues at <a href='http://dsail.kaist.ac.kr'>Data Science and Artificial Intelligence Lab</a>.
 
