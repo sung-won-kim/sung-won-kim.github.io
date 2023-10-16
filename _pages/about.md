@@ -27,6 +27,6 @@ I am primarily focused on data mining and machine learning, with a particular in
 My research is driven by exploring data-efficient methods that not only leverage the powerful performance of deep learning but also maintain applicability to training and inference time when applied to real-world scenarios.  
 
   - Graph Neural Networks  
-  - Data-Efficiency Deep Learning  
+  - Data-Efficient Deep Learning  
   - Meta-Learning  
   - Anything related to the tasks that can be addressed in real-world scenarios!    
