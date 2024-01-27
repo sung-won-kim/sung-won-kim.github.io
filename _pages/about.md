@@ -13,10 +13,10 @@ profile:
 news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
-educations: true
-social: true  # includes social icons at the bottom of the page
-work : true
-teaching : true
+educations: false
+social: false  # includes social icons at the bottom of the page
+work : false
+teaching : false
 ---
 
 I'm a Ph.D. student in Graduate School of Data Science at <a href='https://kaist.ac.kr'>KAIST</a>, where I am fortunate to be advised by <a href='http://dsail.kaist.ac.kr/professor/'>Prof. Chanyoung Park</a>.
