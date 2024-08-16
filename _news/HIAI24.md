@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-A paper got accepted at <a href='https://human-interpretable-ai.github.io'>KDD 2024 Workshop on Human-INterpretable AI</a> (Oral, Best Paper).
+A paper got accepted at <a href='https://human-interpretable-ai.github.io'>KDD 2024 Workshop on Human-Interpretable AI</a> (Oral, Best Paper).
