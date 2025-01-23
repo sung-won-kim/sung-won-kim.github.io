@@ -28,5 +28,5 @@ I am primarily focused on data mining and machine learning, with a particular in
 
 - Graph Neural Networks  
 - Learning-based 3D Simulation via GNN  
-- Data-Efficient Deep Learning  
 - Federated Learning  
+- Data-Efficient Deep Learning  
