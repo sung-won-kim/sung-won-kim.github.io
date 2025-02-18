@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-A paper got accepted at <a href='https://fedkdd.github.io'>KDD 2024 Workshop on Federated Learning</a> <FONT COLOR="#FF0000">(Oral, Best Paper)</FONT>.
+A paper got accepted at <a href='https://fedkdd.github.io'>KDD 2024 Workshop on Federated Learning</a> <FONT COLOR="#FF0000">(Best Paper Award)</FONT>.
