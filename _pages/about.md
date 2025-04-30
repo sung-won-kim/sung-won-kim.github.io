@@ -23,10 +23,16 @@ I'm a Ph.D. student in <a href='https://gsds.kaist.ac.kr'>Graduate School of Dat
 
 I'm actively on research with my best colleagues at <a href='http://dsail.kaist.ac.kr'>Data Science and Artificial Intelligence Lab</a>.
 
-I am primarily focused on data mining and machine learning, with a particular interest in graph data analysis. 
-<!-- My research is driven by exploring data-efficient methods that not only leverage the powerful performance of deep learning but also maintain applicability to training and inference time when applied to real-world scenarios.   -->
+I am primarily focused on data mining and machine learning, with a particular emphasis on solving problems using graph neural networks. My research is largely data-driven, aiming to solve challenging problems in real-world scenarios.
 
 - Graph Neural Networks  
-- Learning-based 3D Simulation via GNN  
-- Federated Learning  
-- Data-Efficient Deep Learning  
+  - Learning-based 3D Simulation
+    - How can we efficiently interact with opposing surfaces while maintaining computational efficiency?
+  - Federated Learning  
+    - What distributed knowledge truly helps improve other clients?
+    - How can we generate synthetic data without compromising privacy?
+    - How can we personalize local models without forgetting global knowledge?
+  - Data-Efficient Deep Learning  
+    - How can we generalize underlying semantics with extremely limited training data?
+
+I actively seek practical challenges from the real world, regardless of domain. Recently, I’ve been especially focused on 3D analysis and scientific problems.
