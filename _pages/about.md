@@ -23,17 +23,25 @@ I'm a Ph.D. candidate in <a href='https://gsds.kaist.ac.kr'>Graduate School of D
 
 I'm actively on research with my best colleagues at <a href='http://dsail.kaist.ac.kr'>Data Science and Artificial Intelligence Lab</a>.
 
-My research is largely data-driven, aiming to solve challenging problems in real-world scenarios.
+<!-- My research is largely data-driven, aiming to solve challenging problems in real-world scenarios. -->
 
-<!-- - Graph Neural Networks   -->
-  - Physics-AI, Learning-based 3D Simulation **(Collaboration with LG Electronics)**
-    - How can we create a learning-based alternative to the FEM for 3D inputs with highly complex geometries, given the initial and boundary conditions? (Point-cloud based)
-    - How can we efficiently interact with opposing surfaces while maintaining computational efficiency? (Mesh based)
-  - Data-driven AI (Federated Learning)  
-    - What distributed knowledge truly helps improve other clients?
-    - How can we generate synthetic data without compromising privacy?
-    - How can we personalize local models without forgetting global knowledge?
-  - Data-Efficient Deep Learning  
-    - How can we generalize underlying semantics with extremely limited training data?
+---
 
-I actively seek practical challenges from the real world, regardless of domain. Recently, I’ve been especially focused on 3D analysis and scientific problems.
+🔬 Core Research Focus
+
+**AI Surrogate Modeling for CAE (Computer-Aided Engineering)**  
+
+My primary research is dedicated to developing **high-fidelity AI surrogate models** to replace computationally intensive 3D CAE simulations (e.g., structural mechanics, fluid dynamics, injection molding analysis, etc.). This work directly accelerates engineering design cycles and lowers computational costs.  
+
+  `Keywords: Physics AI (Engineering), 3D Simulation, Data-Efficient Learning`  
+
+**Key Focus:**
+  - Designing **effective 3D representations** (point-cloud, mesh, etc.) to achieve **maximal speed and accuracy** in surrogate models.
+  - Integrating LLMs to significantly enhance model **usability** and streamline complex engineering workflows for practical application.
+
+**Projects:**  
+Physics-AI, Learning-based 3D Simulation **(Collaboration with LG Electronics)**  
+  - How can we create a learning-based alternative to the FEM for 3D inputs with highly complex geometries, given the initial and boundary conditions? (Point-cloud based)
+  - How can we efficiently interact with opposing surfaces while maintaining computational efficiency? (Mesh based)
+
+<!-- I actively seek practical challenges from the real world, regardless of domain. Recently, I’ve been especially focused on 3D analysis and scientific problems. -->
