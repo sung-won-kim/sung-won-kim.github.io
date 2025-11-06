@@ -33,7 +33,7 @@ I'm actively on research with my best colleagues at <a href='http://dsail.kaist.
 
 My primary research is dedicated to developing **high-fidelity AI surrogate models** to replace computationally intensive 3D CAE simulations (e.g., structural mechanics, fluid dynamics, injection molding analysis, etc.). This work directly accelerates engineering design cycles and lowers computational costs.  
 
-  `Keywords: Physics AI (Engineering), 3D Simulation, Data-Efficient Learning`  
+  `Keywords: Physics AI (Engineering), 3D Simulation, Physics-Informed Neural Networks (PINNs), Data-Efficient Learning`  
 
 **Key Focus:**
   - Designing **effective 3D representations** (point-cloud, mesh, etc.) to achieve **maximal speed and accuracy** in surrogate models.
