@@ -19,7 +19,8 @@ work : false
 teaching : false
 ---
 
-I'm a Ph.D. candidate in <a href='https://gsds.kaist.ac.kr'>Graduate School of Data Science</a> at <a href='https://kaist.ac.kr'>KAIST</a>, where I am fortunate to be advised by <a href='http://dsail.kaist.ac.kr/professor/'>Prof. Chanyoung Park</a>.
+<!-- I'm a Ph.D. candidate in <a href='https://gsds.kaist.ac.kr'>Graduate School of Data Science</a> at <a href='https://kaist.ac.kr'>KAIST</a>, where I am fortunate to be advised by <a href='http://dsail.kaist.ac.kr/professor/'>Prof. Chanyoung Park</a>. I also majored B.S. in Civil, Environmental and Architectural Engineering in Korea University. -->
+I am a Ph.D. candidate in the <a href='https://gsds.kaist.ac.kr'>Graduate School of Data Science (GSDS)</a> at <a href='https://kaist.ac.kr'>KAIST</a>, where I am advised by <a href='http://dsail.kaist.ac.kr/professor/'>Prof. Chanyoung Park</a>. I hold a B.S. degree in <a href='https://ace.korea.ac.kr/eng/index.php'>Civil, Environmental and Architectural Engineering from Korea University</a>.
 
 I'm actively on research with my best colleagues at <a href='http://dsail.kaist.ac.kr'>Data Science and Artificial Intelligence Lab</a>.
 
@@ -29,11 +30,11 @@ I'm actively on research with my best colleagues at <a href='http://dsail.kaist.
 
 🔬 Core Research Focus
 
-**AI Surrogate Modeling for CAE (Computer-Aided Engineering)**  
+**AI Surrogate Modeling for CAE and PDE solvers (Neural Operators)**  
 
-My primary research is dedicated to developing **high-fidelity AI surrogate models** to replace computationally intensive 3D CAE simulations (e.g., structural mechanics, fluid dynamics, injection molding analysis, etc.). This work directly accelerates engineering design cycles and lowers computational costs.  
+My primary research is dedicated to developing **high-fidelity AI surrogate models** to replace computationally intensive 3D CAE simulations (e.g., structural mechanics, fluid dynamics, injection molding analysis, etc.) and PDE solvers in engineering (i.e., neural operators). This work directly accelerates engineering design cycles and lowers computational costs.  
 
-  `Keywords: Physics AI (Engineering), 3D Simulation, Physics-Informed Neural Networks (PINNs), Data-Efficient Learning`  
+  `Keywords: Physics AI (Engineering), 3D Simulation, Physics-Informed Neural Networks (PINNs), Neural Operators`  
 
 **Key Focus:**
   - Designing **effective 3D representations** (point-cloud, mesh, etc.) to achieve **maximal speed and accuracy** in surrogate models.
