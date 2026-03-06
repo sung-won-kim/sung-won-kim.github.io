@@ -779,12 +779,44 @@ footer.sticky-bottom {
         transition: all 0.15s ease;
       }
 
-      div.abstract.hidden {
-        border: dashed 1px var(--global-bg-color);
-      }
+      .abstract-wrapper {
+        position: relative;
+        display: inline-block;
 
-      div.abstract.hidden.open {
-        border-color: var(--global-text-color);
+        .abstract-tooltip {
+          position: absolute;
+          top: calc(100% + 8px);
+          left: 0;
+          width: 420px;
+          max-width: 70vw;
+          background-color: var(--global-card-bg-color);
+          border: 1px solid var(--global-divider-color);
+          border-radius: 10px;
+          padding: 1rem 1.2rem;
+          font-size: 0.82rem;
+          line-height: 1.7;
+          color: var(--global-text-color);
+          z-index: 200;
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+          text-align: left;
+          visibility: hidden;
+          opacity: 0;
+          transform: translateY(6px);
+          pointer-events: none;
+          transition: opacity 0.22s ease, transform 0.22s ease, visibility 0s linear 0.22s;
+
+          p {
+            margin: 0;
+          }
+        }
+
+        &:hover .abstract-tooltip {
+          visibility: visible;
+          opacity: 1;
+          transform: translateY(0);
+          pointer-events: auto;
+          transition: opacity 0.22s ease, transform 0.22s ease, visibility 0s linear 0s;
+        }
       }
     }
   }
