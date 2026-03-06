@@ -660,14 +660,14 @@ footer.sticky-bottom {
         display: inline;
         background-image: linear-gradient(var(--global-theme-color), var(--global-theme-color));
         background-repeat: no-repeat;
-        background-size: 0 2px;
+        background-size: 0 1px;
         background-position: 0 100%;
         transition: background-size 0.35s ease, color 0.2s ease;
         padding-bottom: 2px;
       }
 
-      &:hover .title {
-        background-size: 100% 2px;
+      &.abstract-active .title {
+        background-size: 100% 1px;
         color: var(--global-theme-color);
       }
 
@@ -822,16 +822,26 @@ footer.sticky-bottom {
           position: absolute;
           top: 0.5rem;
           right: 0.6rem;
-          background: none;
-          border: none;
+          background: none !important;
+          background-color: transparent !important;
+          border: none !important;
+          box-shadow: none !important;
+          outline: none !important;
+          -webkit-appearance: none;
+          appearance: none;
           cursor: pointer;
           font-size: 1.1rem;
           line-height: 1;
           padding: 0;
+          margin: 0;
           color: var(--global-text-color-light);
           z-index: 201;
 
-          &:hover {
+          &:hover, &:focus, &:active {
+            background: none !important;
+            background-color: transparent !important;
+            box-shadow: none !important;
+            outline: none !important;
             color: var(--global-text-color);
           }
         }

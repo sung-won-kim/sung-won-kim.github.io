@@ -1,28 +1,23 @@
 // add toggle functionality to abstract and bibtex buttons
 $(document).ready(function() {
-    // Abstract: click to open, X button or outside click to close
+    // Abstract: click to open, X button to close
     $('a.abstract').click(function(e) {
         e.stopPropagation();
         var $tooltip = $(this).siblings('.abstract-tooltip');
+        var $li = $(this).closest('li');
         var isOpen = $tooltip.hasClass('open');
-        // close all other open tooltips
         $('.abstract-tooltip.open').removeClass('open');
+        $('li').removeClass('abstract-active');
         if (!isOpen) {
             $tooltip.addClass('open');
+            $li.addClass('abstract-active');
         }
     });
 
     $('.abstract-close').click(function(e) {
         e.stopPropagation();
         $(this).closest('.abstract-tooltip').removeClass('open');
-    });
-
-    $(document).click(function() {
-        $('.abstract-tooltip.open').removeClass('open');
-    });
-
-    $('.abstract-tooltip').click(function(e) {
-        e.stopPropagation();
+        $(this).closest('li').removeClass('abstract-active');
     });
 
     $('a.bibtex').click(function() {
