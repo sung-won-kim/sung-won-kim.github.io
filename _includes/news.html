@@ -12,10 +12,10 @@
       {% endif %}
       {% for item in news limit: news_limit %}
       <tr>
-        <!-- <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th> -->
+        <!-- <th scope="row">{{ item.date | date: "%b %Y" }}</th> -->
         <th scope="row"
-          style='caret-color: rgb(73, 80, 87); color: rgb(73, 80, 87); font-family: "Noto Sans KR", sans-serif; font-size: 14px; letter-spacing: -0.5px;''>
-          {{ item.date | date: "%b %-d,<br> %Y" }}</th>
+          style='caret-color: rgb(73, 80, 87); color: rgb(73, 80, 87); font-family: "Noto Sans KR", sans-serif; font-size: 14px; letter-spacing: -0.5px; white-space: nowrap;'>
+          {{ item.date | date: "%b %Y" }}</th>
         <td>
           {% if item.inline -%}
           {{ item.content | remove: ' <p>' | remove: '</p>' | emojify }}
