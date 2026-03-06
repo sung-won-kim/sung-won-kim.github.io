@@ -643,18 +643,40 @@ footer.sticky-bottom {
   border: 1px solid var(--global-theme-color);
 }
 .publications ol.bibliography li .title {
-  font-weight: bolder;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.4;
+  display: inline;
+  background-image: linear-gradient(var(--global-theme-color), var(--global-theme-color));
+  background-repeat: no-repeat;
+  background-size: 0 2px;
+  background-position: 0 100%;
+  transition: background-size 0.35s ease, color 0.2s ease;
+  padding-bottom: 2px;
+}
+.publications ol.bibliography li:hover .title {
+  background-size: 100% 2px;
+  color: var(--global-theme-color);
+}
+.publications ol.bibliography li .author {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  color: var(--global-text-color-light);
 }
 .publications ol.bibliography li .author a {
-  border-bottom: 1px dashed var(--global-theme-color);
+  color: var(--global-text-color-light);
+  border-bottom: 1px dashed var(--global-text-color-light);
 }
 .publications ol.bibliography li .author a:hover {
-  border-bottom-style: solid;
+  color: var(--global-theme-color);
+  border-bottom: 1px dashed var(--global-theme-color);
   text-decoration: none;
 }
 .publications ol.bibliography li .author > em {
-  border-bottom: 1px solid;
+  color: var(--global-text-color);
+  border-bottom: 1px solid var(--global-text-color);
   font-style: normal;
+  font-weight: 500;
 }
 .publications ol.bibliography li .author > span.more-authors {
   color: var(--global-text-color-light);
@@ -664,6 +686,13 @@ footer.sticky-bottom {
 .publications ol.bibliography li .author > span.more-authors:hover {
   color: var(--global-text-color);
   border-bottom: 1px dashed var(--global-text-color);
+}
+.publications ol.bibliography li .periodical {
+  margin-top: 0.2rem;
+  font-size: 0.82rem;
+  color: var(--global-theme-color);
+  opacity: 0.85;
+  letter-spacing: 0.02em;
 }
 .publications ol.bibliography li .links a.btn {
   color: var(--global-text-color);
