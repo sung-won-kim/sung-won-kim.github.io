@@ -9,6 +9,8 @@ nav_order: 1
 <!-- _pages/publications.md -->
 <div class="publications">
 
+<p style="font-size: 0.9em; color: gray;">† Equal contribution &nbsp;&nbsp; * Co-corresponding author</p>
+
 <div class="pub-nav">
   <a href="#conference">Conference</a>
   <a href="#journal">Journal</a>
