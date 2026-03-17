@@ -127,6 +127,8 @@
             <!-- _pages/publications.md -->
 <div class="publications">
 
+<p style="font-size: 0.9em; color: gray;">† Equal contribution    * Co-corresponding author</p>
+
 <div class="pub-nav">
   <a href="#conference">Conference</a>
   <a href="#journal">Journal</a>
@@ -623,7 +625,72 @@
 
 <h2 class="category-header" id="journal">Journal</h2>
 
-<ol class="bibliography"><li>
+<ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 abbr"><abbr class="badge">Water Research</abbr></div>
+
+  <!-- Entry bib key -->
+  <div id="Choe2026gnopb" class="col-sm-8 pub-content">
+    <!-- Title -->
+    <div class="title">Physics-Embedded Graph Neural Operator for Interaction-Controlled Colloidal Aggregation</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <!--  -->
+      
+      Yongjoon Choe†, <em>Sungwon Kim†</em>, Susan E. Burns*, and Chanyoung Park*</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>Water Research</em>, 2026
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <span class="abstract-wrapper">
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+        <div class="abstract-tooltip">
+          <button class="abstract-close" aria-label="Close">×</button>
+          <p>Colloidal aggregation in natural and engineered waters is a complex function of both particle
+  and groundwater electrochemical conditions, yet predicting aggregation behavior across
+  diffusion-limited and reaction-limited regimes remains challenging due to the nonlinear
+  dependence of collision efficiency on ionic strength and surface potential. This study presents
+  a graph neural operator surrogate model that captures particle aggregation dynamics by
+  embedding transport physics directly into the network architecture. Particle size classes are
+  represented as graph nodes with Brownian collision kernels encoded in edge features, while
+  attention mechanisms conditioned on ionic strength and zeta potential learn collision efficiency
+  variations governed by extended DLVO interactions. The proposed model predicts aggregation
+  kinetics across a range of electrochemical conditions, achieving R2 &gt; 0.99 for both held-out
+  parameter combinations and temporal extrapolation, and outperforming baseline models that
+  do not embed physics in the architecture, as well as loss-based, physics-regularized neural
+  networks. Validation against experimental measurements from bacteriophage, polystyrene, and
+  cerium oxide systems confirms reproduction of aggregation regime transitions and kinetic
+  saturation. Attention analysis reveals physically consistent reorganization from multiple
+  information pathways under strong electrostatic repulsion to integrated processing under weak
+  repulsion. This framework enables rapid, physically grounded exploration of colloidal
+  aggregation relevant to water quality prediction and treatment optimization.</p>
+        </div>
+      </span>
+      <a href="https://github.com/sung-won-kim/gnopb" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+      <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
+  </div>
+</div>
+</li>
+<li>
 <!-- _layouts/bib.html -->
 <div class="row">
   <div class="col-sm-2 abbr"><abbr class="badge">Bioinformatics</abbr></div>
@@ -670,7 +737,8 @@
     </div>
   </div>
 </div>
-</li></ol>
+</li>
+</ol>
 
 <h2 class="category-header" id="workshop">Workshop</h2>
 
@@ -954,7 +1022,7 @@
 
   <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
-        © Copyright 2026 Sungwon  Kim. Last updated: March 06, 2026.
+        © Copyright 2026 Sungwon  Kim. Last updated: March 17, 2026.
       </div>
     </footer>
 
