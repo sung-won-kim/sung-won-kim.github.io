@@ -51,11 +51,6 @@
 
     <!-- Dark Mode -->
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
-
-    <script src="/assets/js/theme.js"></script>
-    <script src="/assets/js/dark_mode.js"></script>
-    
 
 </head>
 
@@ -90,14 +85,6 @@
               <!-- Other pages -->
               <li class="nav-item active"><a class="nav-link" href="/publications/">Publications<span class="sr-only">(current)</span></a></li>
               <li class="nav-item "><a class="nav-link" href="/assets/pdf/CV.pdf" target="_blank">CV</a></li>
-
-              <!-- Toogle theme mode -->
-              <li class="toggle-container">
-                <button id="light-toggle" title="Change theme">
-                  <i class="fas fa-moon"></i>
-                  <i class="fas fa-sun"></i>
-                </button>
-              </li>
             </ul>
           </div>
         </div>
@@ -127,7 +114,7 @@
             <!-- _pages/publications.md -->
 <div class="publications">
 
-<p style="font-size: 0.9em; color: gray;">† Equal contribution    * Co-corresponding author</p>
+<p style="font-size: 0.9em; color: gray;">* Equal Contribution    † Co-corresponding author</p>
 
 <div class="pub-nav">
   <a href="#conference">Conference</a>
@@ -138,6 +125,53 @@
 <h2 class="category-header" id="conference">Conference</h2>
 
 <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 abbr"><abbr class="badge">ICML</abbr></div>
+
+  <!-- Entry bib key -->
+  <div id="Kim2026eqginoicml" class="col-sm-8 pub-content">
+    <!-- Title -->
+    <div class="title">EqGINO: Equivariant Geometry-Informed Fourier Neural Operators for 3D PDEs</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <!--  -->
+      
+      <em>Sungwon Kim</em>, Juho Song, Seungmin Shin, Guimok Cho, Sangkook Kim, and Chanyoung Park</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>Forty-Third International Conference on Machine Learning (ICML)</em>, 2026
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <span class="abstract-wrapper">
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+        <div class="abstract-tooltip">
+          <button class="abstract-close" aria-label="Close">×</button>
+          <p>Deep learning surrogates for 3D Partial Differential Equations (PDEs) often fail to generalize across geometric transformations because they depend heavily on specific coordinate systems. While equivariant networks offer a solution, they typically rely on local operations in the spatial domain, making the global receptive field—essential for PDE dynamics—computationally expensive. Conversely, Fourier Neural Operators (FNOs) efficiently capture global interactions, yet establishing 3D equivariance within them remains impractical due to the prohibitive cost of spectral group convolutions. To bridge this gap, we introduce EqGINO, a geometrically robust framework that enforces isotropy in the spectral domain. By design, EqGINO guarantees exact equivariance to the discrete symmetries inherent to the discretized computational domain. Beyond this discrete guarantee, our structural prior enables effective generalization to arbitrary continuous orientations even with a limited number of SE(3)-transformed training samples. Consequently, our method robustly models coordinate-invariant physical laws on complex irregular 3D geometries.</p>
+        </div>
+      </span>
+      <a href="https://github.com/sung-won-kim/EqGINO" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+      <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
+  </div>
+</div>
+</li>
 <li>
 <!-- _layouts/bib.html -->
 <div class="row">
@@ -397,7 +431,7 @@
       
       <!--  -->
       
-      Seungyoon Choi†, Wonjoong Kim†, <em>Sungwon Kim</em>, Yeonjun In, Sein Kim, and Chanyoung Park</div>
+      Seungyoon Choi*, Wonjoong Kim*, <em>Sungwon Kim</em>, Yeonjun In, Sein Kim, and Chanyoung Park</div>
 
     <!-- Journal/Book title and date -->
     
@@ -491,7 +525,7 @@
       
       <!--  -->
       
-      Namkyeong Lee†, Heewoong Noh†, <em>Sungwon Kim</em>, Dongmin Hyun, Gyoung S. Na, and Chanyoung Park</div>
+      Namkyeong Lee*, Heewoong Noh*, <em>Sungwon Kim</em>, Dongmin Hyun, Gyoung S. Na, and Chanyoung Park</div>
 
     <!-- Journal/Book title and date -->
     
@@ -642,7 +676,7 @@
       
       <!--  -->
       
-      Yongjoon Choe†, <em>Sungwon Kim†</em>, Susan E. Burns*, and Chanyoung Park*</div>
+      Yongjoon Choe*, <em>Sungwon Kim*</em>, Susan E. Burns†, and Chanyoung Park†</div>
 
     <!-- Journal/Book title and date -->
     
@@ -1022,7 +1056,7 @@
 
   <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
-        © Copyright 2026 Sungwon  Kim. Last updated: March 17, 2026.
+        © Copyright 2026 Sungwon  Kim. Last updated: May 01, 2026.
       </div>
     </footer>
 
