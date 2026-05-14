@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-A paper got accepted at <a href='https://www2024.thewebconf.org'>WWW 2024</a>.
+A paper was accepted at <a href='https://www2024.thewebconf.org'>WWW 2024</a>.

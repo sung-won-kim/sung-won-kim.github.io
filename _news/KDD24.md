@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-A paper got accepted at <a href='https://kdd2024.kdd.org'>KDD 2024</a>.
+A paper was accepted at <a href='https://kdd2024.kdd.org'>KDD 2024</a>.

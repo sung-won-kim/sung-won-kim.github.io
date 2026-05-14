@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Two papers got accepted at <a href='https://nips.cc'>NeurIPS 2023</a>.
+Two papers were accepted at <a href='https://nips.cc'>NeurIPS 2023</a>.

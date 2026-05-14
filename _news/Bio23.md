@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-A paper got accepted at <a href='https://academic.oup.com/bioinformatics'>Bioinformatics</a>.
+A paper was accepted at <a href='https://academic.oup.com/bioinformatics'>Bioinformatics</a>.

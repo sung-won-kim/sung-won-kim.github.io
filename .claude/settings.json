@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /Users/sungwon/sung-won-kim.github.io status)",
+      "Bash(lsof -nP -iTCP:4000 -sTCP:LISTEN)"
+    ]
+  }
+}

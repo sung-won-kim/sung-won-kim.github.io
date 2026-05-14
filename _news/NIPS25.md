@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-A paper got accepted at <a href='https://nips.cc'>NeurIPS 2025.
+A paper was accepted at <a href='https://nips.cc'>NeurIPS 2025</a>.
