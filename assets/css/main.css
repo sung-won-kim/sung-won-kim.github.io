@@ -584,18 +584,21 @@ footer.sticky-bottom {
   font-size: 1.4rem;
 }
 .publications .pub-nav {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
   margin-bottom: 1.5rem;
 }
 .publications .pub-nav a {
   display: inline-block;
-  margin: 0 0.4rem;
   padding: 0.2rem 1rem;
   border: 1px solid var(--global-theme-color);
   border-radius: 20px;
   color: var(--global-theme-color);
   font-size: 0.9rem;
   text-decoration: none;
+  white-space: nowrap;
 }
 .publications .pub-nav a:hover {
   background-color: var(--global-theme-color);
@@ -609,6 +612,15 @@ footer.sticky-bottom {
 .publications .pub-nav a[href="#selected"]:hover {
   background-color: var(--global-selected-color);
   color: #ffffff;
+}
+@media (max-width: 576px) {
+  .publications .pub-nav {
+    gap: 0.35rem;
+  }
+  .publications .pub-nav a {
+    padding: 0.2rem 0.7rem;
+    font-size: 0.78rem;
+  }
 }
 .publications .pub-section > summary {
   cursor: pointer;
@@ -663,7 +675,7 @@ footer.sticky-bottom {
   padding-left: 1.5rem;
 }
 .publications ol.bibliography li .abbr {
-  height: 2rem;
+  min-height: 2rem;
   margin-bottom: 0.5rem;
 }
 .publications ol.bibliography li .abbr abbr {
@@ -677,6 +689,10 @@ footer.sticky-bottom {
   font-weight: 700;
   letter-spacing: 0.4px;
   text-transform: uppercase;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: break-word;
+  line-height: 1.25;
 }
 .publications ol.bibliography li .abbr abbr a {
   color: var(--global-theme-color) !important;
