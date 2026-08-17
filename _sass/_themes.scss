@@ -17,6 +17,9 @@
   --global-divider-color: rgba(0, 0, 0, .1);
   --global-card-bg-color: #{$white-color};
 
+  // Accent used to set the "Selected" publications apart from the other sections.
+  --global-selected-color: #8C6D1F;
+
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;
@@ -63,6 +66,9 @@ html[data-theme='dark'] {
   --global-distill-app-color: #{$grey-color-light};
   --global-divider-color: #424246;
   --global-card-bg-color: #{$grey-900};
+
+  // Lighter so it stays legible on the dark background.
+  --global-selected-color: #C2A661;
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;

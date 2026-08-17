@@ -7,6 +7,14 @@
   {% else %}
     {% assign news_limit = news_size %}
   {% endif %}
+  {%- comment -%}
+    On the about page (include.limit), only the first `collapse_after` items are shown;
+    the rest are hidden until the "show more" button below is clicked.
+  {%- endcomment -%}
+  {%- assign collapse_after = 0 -%}
+  {%- if include.limit and site.announcements.collapse_after and news_limit > site.announcements.collapse_after -%}
+    {%- assign collapse_after = site.announcements.collapse_after -%}
+  {%- endif -%}
   <ul class="news-timeline{% if include.limit and site.announcements.scrollable and news_size > 3 %} scrollable{% endif %}">
     {% for item in news limit: news_limit %}
     {%- assign content_text = item.content | strip_html -%}
@@ -24,7 +32,7 @@
         {%- assign icon = icon | append: ' 🎤' -%}
       {%- endif -%}
     {%- endif -%}
-    <li class="news-item">
+    <li class="news-item{% if collapse_after > 0 and forloop.index > collapse_after %} news-item-hidden{% endif %}">
       <span class="news-date">{{ item.date | date: "%b %Y" }}</span>
       <span class="news-text">
         <span class="news-icon">{{ icon }}</span>
@@ -37,6 +45,25 @@
     </li>
     {%- endfor %}
   </ul>
+  {%- if collapse_after > 0 %}
+  {%- assign hidden_count = news_limit | minus: collapse_after -%}
+  <button type="button" class="news-toggle" aria-expanded="false" data-label-more="Show {{ hidden_count }} more"
+    data-label-less="Show less">Show {{ hidden_count }} more</button>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.news-toggle').forEach(function (button) {
+        var list = button.parentElement.querySelector('.news-timeline');
+        if (!list) return;
+        button.addEventListener('click', function () {
+          var expanded = button.getAttribute('aria-expanded') === 'true';
+          list.classList.toggle('news-expanded', !expanded);
+          button.setAttribute('aria-expanded', String(!expanded));
+          button.textContent = expanded ? button.dataset.labelMore : button.dataset.labelLess;
+        });
+      });
+    });
+  </script>
+  {%- endif %}
   {%- else -%}
   <p>No news so far...</p>
   {%- endif %}

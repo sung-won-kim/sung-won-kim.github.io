@@ -71,7 +71,7 @@ github_username: sung-won-kim # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: # your LinkedIn user name
+linkedin_username: sungwon-kim # your LinkedIn user name
 telegram_username: # your Telegram user name
 scholar_userid: zk8j6jQAAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
@@ -174,8 +174,9 @@ collections:
 
 announcements:
   enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 10 # leave blank to include all the news in the `_news` folder
+  scrollable: false # adds a vertical scroll bar if there are more than 3 news items
+  limit: # leave blank to include all the news in the `_news` folder
+  collapse_after: 5 # on the about page, show this many news items and hide the rest behind a "show more" button
 
 latest_posts:
   enabled: true

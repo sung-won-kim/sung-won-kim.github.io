@@ -602,6 +602,64 @@ footer.sticky-bottom {
         text-decoration: none;
       }
     }
+
+    a[href="#selected"] {
+      border-color: var(--global-selected-color);
+      color: var(--global-selected-color);
+
+      &:hover {
+        background-color: var(--global-selected-color);
+        color: $white-color;
+      }
+    }
+  }
+
+  // The section header, venue badges and title underline all resolve
+  // --global-theme-color, so rebinding it here is the whole distinction.
+  .pub-section {
+    >summary {
+      cursor: pointer;
+      list-style: none;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      h2.category-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        // Chevron: points down when collapsed, up when open.
+        &::after {
+          content: '';
+          flex: none;
+          width: 0.45rem;
+          height: 0.45rem;
+          margin: 0 0.2rem 0.2rem 0;
+          border-right: 2px solid var(--global-theme-color);
+          border-bottom: 2px solid var(--global-theme-color);
+          transform: rotate(45deg);
+          transition: transform 0.2s ease;
+        }
+      }
+    }
+
+    &[open]>summary h2.category-header::after {
+      transform: rotate(-135deg);
+      margin-bottom: 0;
+    }
+  }
+
+  .selected-pubs {
+    --global-theme-color: var(--global-selected-color);
+    --global-hover-color: var(--global-selected-color);
+
+    ol.bibliography li .pub-note {
+      display: block;
+      color: var(--global-text-color-light);
+      opacity: 1;
+    }
   }
 
   ol.bibliography {
@@ -712,6 +770,11 @@ footer.sticky-bottom {
         color: var(--global-theme-color);
         opacity: 0.85;
         letter-spacing: 0.02em;
+      }
+
+      // Workshop lineage is only spelled out in the "Selected" section.
+      .pub-note {
+        display: none;
       }
 
       .links {
@@ -1167,6 +1230,33 @@ nav[data-toggle="toc"] {
       max-height: 40vh;
       overflow-y: auto;
     }
+
+    .news-item-hidden {
+      display: none;
+    }
+
+    &.news-expanded .news-item-hidden {
+      display: block;
+    }
+  }
+
+  .news-toggle {
+    display: block;
+    margin: -0.4rem 0 0 7rem;
+    padding: 0.2rem 0.9rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 20px;
+    background-color: transparent;
+    color: var(--global-text-color-light);
+    font-size: 0.82rem;
+    line-height: 1.6;
+    cursor: pointer;
+    transition: color 0.2s ease, border-color 0.2s ease;
+
+    &:hover {
+      color: var(--global-theme-color);
+      border-color: var(--global-theme-color);
+    }
   }
 
   .news-item {
@@ -1224,6 +1314,10 @@ nav[data-toggle="toc"] {
   .news .news-timeline {
     padding-left: 1.5rem;
     background-position: 0.7rem 1.1rem;
+  }
+
+  .news .news-toggle {
+    margin-left: 1.5rem;
   }
 
   .news .news-item {

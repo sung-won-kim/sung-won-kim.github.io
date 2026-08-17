@@ -1,0 +1,1170 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-RESUME-CV
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{setspace}
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Sungwon Kim}
+\newcommand{\CVTitle}{Sungwon Kim's CV}
+\newcommand{\CVNote}{CV compiled on {\today}}
+\newcommand{\CVLinkedin}{https://www.linkedin.com/in/sungwon-kim/}
+\newcommand{\CVWebpage}{http://sung-won-kim.github.io/}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+% bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks
+}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+% \href{https://www.google.com/maps/place/17+Prime+Avenue,+Springfield,+Pennsylvania+10111,+USA}
+% {17 Prime Avenue, Apt 37, Springfield, Pennsylvania 10111, USA}
+\par
+\href{mailto:swkim@kaist.ac.kr}
+{\textcolor{blue}{swkim@kaist.ac.kr}}
+\,\SubBulletSymbol\,
+% +1\,(555)\,101-1001
+% \,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\textcolor{blue}{Homepage}}
+\,\SubBulletSymbol\,
+\href{https://scholar.google.co.kr/citations?user=zk8j6jQAAAAJ&hl=ko}
+{\textcolor{blue}{Google Scholar}}
+\,\SubBulletSymbol\,
+\href{https://github.com/sung-won-kim}
+{\textcolor{blue}{Github}}
+\end{SubTitle}
+
+\begin{Body}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% RESEARCH INTEREST %%
+%%%%%%%%%%%%%%%%%%%%%%%
+\Section
+{Research Interest}
+{Research Interest}
+{PDF:ResearchInterest}
+% \textbf{Graph Neural Network}
+
+% Mining meaningful knowledge from data to develop solutions for real changes to create practical value
+% \BulletItem
+\textbf{AI Surrogate Modeling for CAE and PDE solvers}, Developing \textbf{high-fidelity AI surrogate models} that work alongside computationally intensive \textbf{3D CAE simulations} and \textbf{PDE solvers}.
+% Research focuses on designing \textbf{effective 3D representations} for maximal speed and accuracy, and integrating \textbf{LLMs} to significantly enhance model \textbf{usability} and streamline engineering workflows.
+\Gap
+
+\textbf{Keywords}: Physics AI (Engineering), Neural Operator, 3D Simulation, PINNs.
+\Entry
+\Gap
+
+
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+\href{https://www.kaist.ac.kr/en/}
+{\textbf{KAIST (Korea Advanced Institute of Science and Technology)}},
+Daejeon, South Korea
+
+\BulletItem
+Ph.D. in
+\href{https://gsds.kaist.ac.kr/}
+{Graduate School of Data Science}
+\hfill
+\DatestampYMD{2024}{02}{01} --
+Present
+\begin{Detail}
+\SubBulletItem
+Research Interest: Physics AI (Engineering), Neural Operator
+\SubBulletItem
+Adviser:
+\href{https://dsail.kaist.ac.kr/professor/}
+{\textcolor{blue}{Prof.~Chanyoung~Park}}
+\end{Detail}
+
+\Gap
+\BulletItem
+M.S. in
+\href{https://gsds.kaist.ac.kr/}
+{Graduate School of Data Science}
+\hfill
+\DatestampYMD{2022}{02}{01} --
+\DatestampYMD{2024}{02}{15}
+\begin{Detail}
+\SubBulletItem
+Research Interest: Data-efficient Learning, Federated Learning
+% \SubBulletItem
+% Cumulative GPA: 3.87 / 4.3
+\SubBulletItem
+Adviser:
+\href{https://dsail.kaist.ac.kr/professor/}
+{\textcolor{blue}{Prof.~Chanyoung~Park}}
+\end{Detail}
+
+\BigGap
+\Entry
+\href{https://www.korea.edu/mbshome/mbs/en/index.do}
+{\textbf{Korea University}},
+Seoul, South Korea
+\hfill
+\DatestampYMD{2014}{03}{01} --
+\DatestampYMD{2022}{02}{25}
+
+\BulletItem
+B.S. in
+\href{https://ace.korea.ac.kr:59034/eng/index.php}
+{Civil, Environmental and Architectural Engineering}
+\begin{Detail}
+% \SubBulletItem
+% \textit{Summa Cum Laude} (1 / 133)
+% \SubBulletItem
+% Included two years of mandatory military service in the Office of the President of the Republic of Korea
+% \SubBulletItem
+% Cumulative GPA: 4.36 / 4.5
+\end{Detail}
+
+% \Gap
+% \BulletItem
+% B.A. in
+% \href{https://psych.skku.edu/psy/index.do}
+% {Psychology}
+% \begin{Detail}
+% \SubBulletItem
+% Dual Degree
+% % \SubBulletItem
+% % Cumulative GPA: 4.25 / 4.5
+% \end{Detail}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RESEARCH EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Professional Experience}
+{Professional Experience}
+{PDF:ProfessionalExperience}
+
+\Entry
+% \href{https://nielseniq.com/global/en/}
+{\textbf{AI SOFTWARE Of KOREA}},
+Seoul, South Korea
+
+\Gap
+\BulletItem
+Co-CEO, Co-Founder
+\hfill
+\DatestampYMD{2019}{07}{01} --
+\DatestampYMD{2022}{02}{28}
+\begin{Detail}
+% \SubBulletItem
+% Led Auto-coding project (built models to classify Brands and Categories using web-crawled descriptions)
+\SubBulletItem
+% Spearheaded the Auto-coding project, developing models to classify brands/categories based on web-crawled descriptions
+Development of AI for Socially Vulnerable Groups (information disadvantaged, older persons, children)
+\SubBulletItem
+Management
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%
+%% PUBLICATIONS %%
+%%%%%%%%%%%%%%%%%%
+
+\Section
+{Publications\\ \scriptsize{\normalfont{(*: E\lowercase{qual contribution})}}}
+{Publications}
+{PDF:Publications}
+
+\BigGap
+\SubSection
+{Conferences}
+{Conferences}
+{PDF:Conferences}
+
+% Declare a new group to limit the scope of \MaxNumberedItem to this subsection.
+\begingroup
+\renewcommand{\MaxNumberedItem}{[8888]}
+
+\Gap
+\NumberedItem{[C11]}
+\textbf{EqGINO: Equivariant Geometry-Informed Fourier Neural Operators for 3D PDEs}
+\newline
+\textbf{Sungwon Kim}, Juho Song, Seungmin Shin, Guimok Cho, Sangkook Kim, Chanyoung Park
+\newline
+\textbf{ICML 2026} - Forty-Third International Conference on Machine Learning
+
+\Gap
+\NumberedItem{[C10]}
+\textbf{Disentangling Hyperedges through the lens of Category Theory}
+\newline
+Yoonho Lee, Junseok Lee, Sangwoo Seo, \textbf{Sungwon Kim}, Yeongmin Kim, Chanyoung Park
+\newline
+% \begin{spacing}{0.9}
+\textbf{NeurIPS 2025} - The Thirty-Ninth Annual Conference on Neural Information Processing Systems
+\Gap
+\NumberedItem{[C9]}
+\textbf{Thickness-aware E(3)-Equivariant 3D Mesh Neural Networks}
+\newline
+\textbf{Sungwon Kim}, Namkyeong Lee, Yunyoung Doh, Seungmin Shin, Guimok Cho, Seung-Won Jeon, Sangkook Kim, Chanyoung Park
+\newline
+% \begin{spacing}{0.9}
+\textbf{ICML 2025} - Forty-Second International Conference on Machine Learning
+\Gap
+\NumberedItem{[C8]}
+\textbf{Subgraph Federated Learning for Local Generalization}
+\newline
+\textbf{Sungwon\,Kim}, Yoonho\,Lee, Yunhak\,Oh, Namkyeong\,Lee, Sukwon\,Yun, Junseok\,Lee, Sein\,Kim, Carl\,Yang, Chanyoung\,Park
+\newline
+% \begin{spacing}{0.9}
+\textbf{ICLR 2025} \textcolor{red}{(Oral)} - The\,Thirteenth\,International\,Conference\,on\,Learning\,Representations
+% \end{spacing}
+\Gap
+\NumberedItem{[C7]}
+\textbf{Self-Explainable Temporal Graph Networks based on Graph Information Bottleneck}
+\newline
+Sangwoo Seo, \textbf{Sungwon Kim}, Jihyeong Jung, Yoonho Lee, Chanyoung Park
+\newline
+\textbf{KDD 2024} - ACM SIGKDD Conference on Knowledge Discovery and Data Mining
+
+\Gap
+\NumberedItem{[C6]}
+\textbf{Unsupervised Episode Generation for Graph Meta-learning}
+\newline
+Jihyeong Jung, Sangwoo Seo, \textbf{Sungwon Kim}, Chanyoung Park
+\newline
+\textbf{ICML 2024} – International Conference on Machine Learning
+
+\Gap
+\NumberedItem{[C5]}
+\textbf{DSLR: Diversity Enhancement and Structure Learning for Rehearsal-based Graph Continual Learning}
+\newline
+Seungyoon Choi*, Wonjoong Kim*, \textbf{Sungwon Kim}, Yeonjun In, Sein Kim, Chanyoung Park
+\newline
+\textbf{WWW 2024} \textcolor{red}{(Oral)} – The Web Conference
+
+\Gap
+\NumberedItem{[C4]}
+\textbf{Interpretable Prototype-based Graph Information Bottleneck}
+\newline
+Sangwoo Seo, \textbf{Sungwon Kim}, Chanyoung Park
+\newline
+\textbf{NeurIPS 2023} - In Conference on Neural Information Processing Systems (NeurIPS)
+\newline
+\textcolor{red}{- Gold Prize at the 2023 Samsung Humantech Paper Award}
+
+\Gap
+\NumberedItem{[C3]}
+\textbf{Density\,of\,States\,Prediction\,of\,Crystalline\,Materials\,via\,Prompt-guided\,Multi-Modal\,Transformer}
+\newline
+Namkyeong\,Lee*,\,Heewoong\,Noh*,\,\textbf{Sungwon\,Kim},\,Dongmin\,Hyun,\,Gyoung\,S.\,Na,\,Chanyoung\,Park
+\newline
+\textbf{NeurIPS 2023} - In Conference on Neural Information Processing Systems (NeurIPS)
+
+\Gap
+\NumberedItem{[C2]}
+\textbf{Task-Equivariant Graph Few-shot Learning}
+\newline
+\textbf{Sungwon\,Kim},\,Junseok\,Lee,\,Namkyeong\,Lee,\,Wonjoong\,Kim,\,Seungyoon\,Choi,\,Chanyoung\,Park
+\newline
+\textbf{KDD 2023} - ACM SIGKDD Conference on Knowledge Discovery and Data Mining
+
+\Gap
+\NumberedItem{[C1]}
+\textbf{Conditional Graph Information Bottleneck for Molecular Relational Learning}
+\newline
+Namkyeong Lee, Dongmin Hyun, Gyoung S Na, \textbf{Sungwon Kim}, Junseok Lee, Chanyoung Park
+\newline
+\textbf{ICML 2023} - International Conference on Machine Learning
+
+\endgroup
+\Gap
+
+\SubSection
+{Journals}
+{Journals}
+{PDF:Journals}
+
+% Declare a new group to limit the scope of \MaxNumberedItem to this subsection.
+\begingroup
+\renewcommand{\MaxNumberedItem}{[8888]}
+\Gap
+\NumberedItem{[J2]}
+\textbf{Physics-Embedded Graph Neural Operator for Interaction-Controlled Colloidal Aggregation}
+\newline
+Yongjoon Choe*, \textbf{Sungwon Kim*}, Susan E. Burns†, Chanyoung Park†
+\newline
+\textbf{Water Research 2026}
+\Gap
+\NumberedItem{[J1]}
+\textbf{Deep Single-cell RNA-seq Data Clustering with Graph Prototypical Contrastive Learning}
+\newline
+Junseok Lee, \textbf{Sungwon Kim}, Dongmin Hyun, Namkyeong Lee, Yejin Kim, Chanyoung Park
+\newline
+\textbf{Bioinformatics 2023}
+
+\endgroup
+\Gap
+
+\SubSection
+{Workshops}
+{Workshops}
+{PDF:Workshops}
+
+\begingroup
+\renewcommand{\MaxNumberedItem}{[8888]}
+
+\Gap
+\NumberedItem{[W6]}
+\textbf{Physics-Embedded Graph Neural Operator for Interaction-Controlled Colloidal Aggregation}
+\newline
+Yongjoon Choe*, \textbf{Sungwon Kim*}, Susan E. Burns†, Chanyoung Park†
+\newline
+\textbf{KDD 2026} \textcolor{red}{(Best Paper Award)} - Workshop on Reliable Scientific Foundation Models (RelSciFM)
+
+\Gap
+\NumberedItem{[W5]}
+\textbf{EqGINO: Equivariant Geometry-Informed Fourier Neural Operators for 3D PDEs}
+\newline
+\textbf{Sungwon Kim}, Juho Song, Seungmin Shin, Guimok Cho, Sangkook Kim, Chanyoung Park
+\newline
+\textbf{ICLR 2026} \textcolor{red}{(Oral)} - Workshop on AI and Partial Differential Equations (AI\&PDE)
+
+\Gap
+\NumberedItem{[W4]}
+\textbf{Capturing Functional Context of Genetic Pathways through Hyperedge Disentanglement}
+\newline
+Yoonho Lee, Junseok Lee, Sangwoo Seo, \textbf{Sungwon Kim}, Yeongmin Kim, Chanyoung Park
+\newline
+\textbf{ICLR 2025} - Workshop on Machine Learning for Genomics Explorations (MLGenX)
+
+\Gap
+\NumberedItem{[W3]}
+\textbf{Subgraph Federated Learning for Local Generalization}
+\newline
+\textbf{Sungwon\,Kim}, Yoonho\,Lee, Yunhak\,Oh, Namkyeong\,Lee, Sukwon\,Yun, Junseok\,Lee, Sein\,Kim, Carl\,Yang, Chanyoung\,Park
+\newline
+\textbf{KDD 2024} \textcolor{red}{(Best Paper Award)} - Workshop on Federated Learning for Data Mining and Graph Analytics
+
+\Gap
+\NumberedItem{[W2]}
+\textbf{Interpretable Graph Model with Prototype-Based Graph Information Bottleneck}
+\newline
+Sangwoo Seo, \textbf{Sungwon Kim}, Chanyoung Park
+\newline
+\textbf{KDD 2024} \textcolor{red}{(Best Paper Award)} - Workshop on Human-Interpretable AI
+
+\Gap
+\NumberedItem{[W1]}
+\textbf{Deep single-cell RNA-seq data clustering with graph prototypical contrastive learning}
+\newline
+Junseok Lee, \textbf{Sungwon Kim}, Dongmin Hyun, Namkyeong Lee, Yejin Kim, Chanyoung Park
+\newline
+\textbf{ICML 2023} - Workshop on Computational Biology
+
+\endgroup
+
+%%%%%%%%%%%%%%%%%%%
+%% In Submission %%
+%%%%%%%%%%%%%%%%%%%
+
+% \Section
+% {In Submission}
+% {In Submission}
+% {PDF:InSubmission}
+
+% \BigGap
+% \SubSection
+% {Conferences}
+% {Conferences}
+% {PDF:Conferences}
+
+% % Declare a new group to limit the scope of \MaxNumberedItem to this subsection.
+% \begingroup
+% \renewcommand{\MaxNumberedItem}{[8888]}
+
+% \Gap
+% \NumberedItem{[S1]}
+% Toward Generalizability of Graph-based Imputation on Bio-Medical Missing Data
+% \newline
+% Sukwon Yun, \textbf{Yunhak Oh}, Junseok Lee, Xin Liu, Tsuyoshi Murata, Dongmin Hyun, Sein Kim, Tianlong Chen, Chanyoung Park
+% \newline
+% \textit{Under Review}
+
+% \endgroup
+
+%%%%%%%%%%%%%%
+%% PROJECTS %%
+%%%%%%%%%%%%%%
+
+\Section
+{Projects}
+{Projects}
+{PDF:Projects}
+
+% \BigGap
+% \SubSection
+% {Conferences}
+% {Conferences}
+% {PDF:Conferences}
+
+% Declare a new group to limit the scope of \MaxNumberedItem to this subsection.
+% \Gap
+\BulletItem
+\textbf{3D Neural Surrogate Modeling for Fluid Flow Simulation}, LG Electronics
+\hfill
+\DatestampY{2026} --
+
+\Gap
+\BulletItem
+\textbf{3D Geometry-Based Graph Neural Networks for Engineering Simulation}, LG Electronics
+\hfill
+\DatestampY{2025}
+
+\Gap
+\BulletItem
+\textbf{3D Geometry-Based Graph Neural Networks for Injection Molding}, LG Electronics
+\hfill
+\DatestampY{2024}
+% \begin{Detail}
+% \Item
+% Best award project at Seoul R\&D research center (2021)
+% \end{Detail}
+
+\Gap
+\BulletItem
+\textbf{Translating Korean Legal Case’s Sentences into Common Terms}, AISoftKorea
+\hfill
+\DatestampY{2021}--
+\DatestampY{2022}
+\begin{Detail}
+\Item
+Best award project at Seoul R\&D research center (2021)
+\end{Detail}
+
+\Gap
+\BulletItem
+\textbf{Sentence Similarity Model for Korean Legal Sentences}, AISoftKorea
+\hfill
+\DatestampY{2020}
+% \DatestampY{2020}
+\begin{Detail}
+\Item
+Best award project at Seoul R\&D research center (2020)
+\end{Detail}
+
+\Gap
+\BulletItem
+\textbf{Big Data Analysis of Color Cognition in Older Adults and Disabled Children}, AISoftKorea
+\hfill
+\DatestampY{2017}
+% \DatestampY{2020}
+\begin{Detail}
+\Item
+Development of Color Cognitive Test Kit and Multivariate Regression Analysis 
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% AWARDS & SCHOLARSHIPS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Honors \&\newline
+Awards}
+{Honors \& Awards}
+{PDF:HonorsandAwards}
+
+\Gap
+\BulletItem
+\textbf{Best Paper Award}
+\hfill
+\DatestampY{2026}
+\begin{Detail}
+\Item
+KDD 2026 -Workshop on Reliable Scientific Foundation Models (RelSciFM), Jeju, Korea
+\end{Detail}
+
+\Gap
+\BulletItem
+\textbf{Gold Reviewer}
+\hfill
+\DatestampY{2026}
+\begin{Detail}
+\Item
+ICML 2026 - Recognized as a Gold Reviewer (top 25\% of reviewers)
+\end{Detail}
+
+\Gap
+\BulletItem
+\textbf{Google Research Award}, Google
+\hfill
+\DatestampY{2026}
+\begin{Detail}
+\Item
+``Coordinate-Invariant Neural Operators for Geometry-Transferable 3D PDE Solving''
+\Item
+Awarded to Prof. Chanyoung Park (PI); serving as the lead student researcher on the funded project
+\end{Detail}
+
+\Gap
+\BulletItem
+\textbf{Best Paper Award}
+\hfill
+\DatestampY{2024}
+\begin{Detail}
+\Item
+KDD 2024 -Workshop on Federated Learning for Data Mining and Graph Analytics (FedKDD), Barcelona, Spain
+\end{Detail}
+
+\Gap
+\BulletItem
+\textbf{Best Paper Award}
+\hfill
+\DatestampY{2024}
+\begin{Detail}
+\Item
+KDD 2024 -Workshop on Human-Interpretable AI, Barcelona, Spain
+\end{Detail}
+
+\Gap
+\BulletItem
+\textbf{30th Samsung Humantech Paper Award}
+\hfill
+\DatestampY{2024}
+\begin{Detail}
+\Item
+Gold Prize
+\end{Detail}
+
+\Gap
+\BulletItem
+\textbf{Seoul Innovation Challenge},
+Seoul Business Agency
+\hfill
+\DatestampY{2020}
+\begin{Detail}
+\Item
+Awarded for the best team out of 444 participants 
+\href{https://mediahub.seoul.go.kr/archives/2001375}{\textcolor{blue}{[news]}}\href{https://www.eachj.co.kr/news/articleView.html?idxno=1581}{\textcolor{blue}{[news]}}
+\newline
+Systems and methods for providing quantified AI answering services for legal questions 
+\end{Detail}
+
+\Gap
+\BulletItem
+\textbf{National University Rowing Conference}, Korean Rowing Association
+\hfill
+\DatestampY{2015}
+\begin{Detail}
+\Item
+First place, Crew of Korea University Rowing Team \href{https://www.youtube.com/watch?v=crpTdGXkIOg}{\textcolor{blue}{[YouTube]}}
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Professional Sevices  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Professional \newline
+Services}
+{Professional Services}
+{PDF:ProfessionalServices}
+
+\textbf{Conference Reviewer/Program Committee}
+
+\BulletItem
+Conference on Neural Information Processing Systems (NeurIPS)
+\hfill
+\DatestampY{2024} --
+\DatestampY{2026}
+
+
+\BulletItem
+International Conference on Machine Learning (ICML)
+\hfill
+\DatestampY{2025} --
+\DatestampY{2026}
+
+\BulletItem
+International Conference on Learning Representations (ICLR)
+\hfill
+\DatestampY{2025} --
+\DatestampY{2026}
+
+\BulletItem
+The Web Conference (WWW)
+\hfill
+\DatestampY{2026}
+
+\BulletItem
+Conference on Information and Knowledge Management (CIKM) - Short/Applied Research
+\hfill
+\DatestampY{2025}
+
+
+
+
+% \BulletItem
+% \textbf{International Conference on Learning Representations}, ICLR
+% \hfill
+% \DatestampY{2025}
+% \begin{Detail}
+% \Item
+% Conference Reviewer
+% \end{Detail}
+
+% \begin{Detail}
+% \Item
+% Conference Reviewer
+% \end{Detail}
+
+\Gap
+\textbf{Journal Reviewer}  
+
+\BulletItem
+IEEE Transactions on Network Science and Engineering (TSNE)
+\hfill
+\DatestampY{2025}
+
+\BulletItem
+IEEE Transactions on Neural Networks and Learning Systems (TNNLS)
+\hfill
+\DatestampY{2024}
+% \begin{Detail}
+% \Item
+% Journal Reviewer
+% \end{Detail}
+
+\BulletItem
+IEEE Transactions on Cognitive and Developmental Systems (TCDS)
+\hfill
+\DatestampY{2024}
+% \begin{Detail}
+% \Item
+% Journal Reviewer
+% \end{Detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Teaching Experience  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Teaching \newline
+Experience}
+{Teaching Experience}
+{PDF:TeachingExperience}
+
+\BulletItem
+\textbf{AI Specialist Course}, Samsung Electronics
+\hfill
+\DatestampY{2024}
+\begin{Detail}
+\Item
+Teaching Assistant
+\end{Detail}
+
+\Gap
+\BulletItem
+\textbf{AI Specialist Course}, Samsung Electronics
+\hfill
+\DatestampY{2023}
+\begin{Detail}
+\Item
+Teaching Assistant
+\end{Detail}
+
+\Gap
+\BulletItem
+\textbf{DS503: Machine Learning for Data Science}, KAIST
+\hfill
+\DatestampY{2023}
+\begin{Detail}
+\Item
+Teaching Assistant
+\end{Detail}
+
+\Gap
+\BulletItem
+\textbf{AI Business Transformation Program}, KAIST
+\hfill
+\DatestampY{2022}
+\begin{Detail}
+\Item
+Researcher
+\end{Detail}
+
+\Gap
+\BulletItem
+\textbf{IE343: Statistical Machine Learning}, KAIST
+\hfill
+\DatestampY{2022}
+\begin{Detail}
+\Item
+Teaching Assistant
+\end{Detail}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% TALKS and SEMINARS %%
+%%%%%%%%%%%%%%%%%%%%%%%%
+\Section
+{Talks and Seminars}
+{Talks and Seminars}
+{PDF:TalksAndSeminars}
+
+\BulletItem
+\textbf{Top Conference Session}, Korea Computer Congress (KCC)
+\hfill
+\DatestampY{2025}
+\begin{Detail}
+\Item
+Subgraph Federated Learning for Local Generalization
+\end{Detail}
+
+\Gap
+\BulletItem
+\textbf{Top Conference Session}, Korea Software Congress (KSC)
+\hfill
+\DatestampY{2023}
+\begin{Detail}
+\Item
+Task-Equivariant Graph Few-shot Learning
+\end{Detail}
+
+
+%%%%%%%%%%%%%%%%
+%% REFERENCES %%
+%%%%%%%%%%%%%%%%
+
+\Section
+{References}
+{References}
+{PDF:References}
+
+\BulletItem
+\href{https://dsail.kaist.ac.kr/professor/}
+{\textbf{Prof. Chanyoung Park}},
+Assistant Professor, KAIST
+\newline
+Email: \href{mailto:cy.park@kaist.ac.kr}
+{cy.park@kaist.ac.kr}
+% \Gap
+% \BulletItem
+% \href{http://infosci.skku.ac.kr/page.php?p_id=professor}
+% {\textbf{Mr. Joonhyoung Cho}}, Representative Director, Jamong Lab (Formerly Head of HR, NielsenIQ Korea)
+% \newline
+% Email: \href{mailto:talk2joon@gmail.com}
+% {talk2joon@gmail.com}
+
+
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %% PROFESSIONAL AFFILIATIONS & ACTIVITIES %%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \Section
+% {Professional Affiliations\newline
+% \& Activities}
+% {Professional Affiliations \& Activities}
+% {PDF:ProfessionalAffiliationsActivities}
+
+% \Entry
+% \href{http://www.example.com/my-society}
+% {\textbf{Joint Society of Earth Scientists and Global Think Tank on Climate Resiliency}},
+% \newline
+% North Attleborough, Massachusetts, USA
+
+% \Gap
+% \BulletItem
+% Member
+% \hfill
+% \DatestampY{2009} --
+% Present
+
+% % Manual page break.
+% \newpage
+
+% %%%%%%%%%%%%%%%%%%%%%%%
+% %% CAMPUS ACTIVITIES %%
+% %%%%%%%%%%%%%%%%%%%%%%%
+
+% \Section
+% {Campus Activities}
+% {Campus Activities}
+% {PDF:CampusActivities}
+
+% \Entry
+% \href{http://www.example.com/my-club}
+% {\textbf{First Volunteers Club}},
+% First American University
+
+% \Gap
+% \BulletItem
+% President
+% \hfill
+% \DatestampYMD{2006}{08}{15} --
+% \DatestampYMD{2007}{08}{15}
+% \begin{Detail}
+% \SubBulletItem
+% Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+% \SubBulletItem
+% Curabitur vitae laoreet velit, vel ultricies est. Nam nec elit ac ante facilisis ultrices.
+% \SubBulletItem
+% Integer sit amet turpis dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at orci eu leo vulputate finibus sed et sem.
+% \SubBulletItem
+% Suspendisse volutpat sapien et mi cursus, gravida ornare mauris sollicitudin.
+% \end{Detail}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %% OTHER WORK EXPERIENCE %%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \Section
+% {Other Work\newline
+% Experience}
+% {Other Work Experience}
+% {PDF:OtherWorkExperience}
+
+% \Entry
+% \href{http://www.example.com/my-company}
+% {\textbf{Alpha Engineering Firm}},
+% Oakland, Ohio, USA
+
+% \Gap
+% \BulletItem
+% Project Officer,
+% Department of Meteorological Sciences,
+% \hfill
+% \DatestampYMD{2007}{10}{15} --
+% \DatestampYMD{2008}{01}{15}
+% \newline
+% Research \& Development Division
+% \begin{Detail}
+% \SubBulletItem
+% Nullam venenatis egestas nisl eget elementum.
+% \SubBulletItem
+% Nulla finibus justo vel turpis efficitur, non lacinia orci maximus. Proin rhoncus, felis vel hendrerit lacinia, enim ipsum ultricies massa, sit amet interdum nisi massa sit amet justo.
+% \SubBulletItem
+% Etiam vitae eros mollis, consectetur quam quis, molestie massa.
+% \end{Detail}
+
+% %%%%%%%%%%%%%%%
+% %% LANGUAGES %%
+% %%%%%%%%%%%%%%%
+
+% \Section
+% {Languages}
+% {Languages}
+% {PDF:Languages}
+
+% \BulletItem
+% English: Native language.
+
+% \Gap
+% \BulletItem
+% Spanish: Fluent (speaking, reading, writing).
+
+% \Gap
+% \BulletItem
+% Latin: Intermediate (reading); basic (speaking, writing).
+
+% %%%%%%%%%%%%
+% %% SKILLS %%
+% %%%%%%%%%%%%
+
+% \Section
+% {Skills}
+% {Skills}
+% {PDF:Skills}
+
+% \Entry
+% {\TeX}, {\LaTeX}, {\XeLaTeX},
+% MATLAB,
+% Mathematica,
+% Maple,
+% R,
+% Tableau,
+% Adobe Photoshop,
+% Adobe Illustrator,
+% Microsoft Word,
+% Microsoft Excel,
+% Microsoft PowerPoint.
+
+
+% %%%%%%%%%%%%%%%
+% %% INTERESTS %%
+% %%%%%%%%%%%%%%%
+
+% \Section
+% {Interests}
+% {Interests}
+% {PDF:Interests}
+
+% \Entry
+% Digital photography,
+% typography,
+% swimming.
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %% MULTILINGUAL UNICODE EXAMPLES %%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \Section
+% {Multilingual Unicode Examples}
+% {Multilingual Unicode Examples}
+% {PDF:MultilingualUnicodeExamples}
+
+% \BulletItem
+% Assortment of unicode characters from
+% \href{http://www.ltg.ed.ac.uk/~richard/unicode-sample.html}
+% {\url{http://www.ltg.ed.ac.uk/~richard/unicode-sample.html}}
+
+% \begin{Detail}
+% \Item
+% \textbf{Latin Extended-A}
+% Ā ā Ă ă Ą ą Ć ć Ĉ ĉ Ċ ċ Č č Ď ď Đ đ Ē ē Ĕ ĕ Ė ė Ę ę Ě ě Ĝ ĝ Ğ ğ Ġ ġ Ģ ģ Ĥ ĥ Ħ ħ Ĩ ĩ Ī ī Ĭ ĭ Į į İ ı Ĳ ĳ Ĵ ĵ
+% \textbf{Latin Extended-B}
+% ƀ Ɓ Ƃ ƃ Ƅ ƅ Ɔ Ƈ ƈ Ɖ Ɗ Ƌ ƌ ƍ Ǝ Ə Ɛ Ƒ ƒ Ɠ Ɣ ƕ Ɩ Ɨ Ƙ ƙ ƚ ƛ Ɯ Ɲ ƞ Ɵ Ơ ơ Ƣ ƣ Ƥ ƥ Ʀ Ƨ ƨ Ʃ ƪ ƫ Ƭ ƭ Ʈ Ư ư Ʊ Ʋ Ƴ ƴ Ƶ
+% \textbf{Latin Extended Additional}
+% Ḁ ḁ Ḃ ḃ Ḅ ḅ Ḇ ḇ Ḉ ḉ Ḋ ḋ Ḍ ḍ Ḏ ḏ Ḑ ḑ Ḓ ḓ Ḕ ḕ Ḗ ḗ Ḙ ḙ Ḛ ḛ Ḝ ḝ Ḟ ḟ Ḡ ḡ Ḣ ḣ Ḥ ḥ Ḧ ḧ Ḩ ḩ Ḫ ḫ Ḭ ḭ Ḯ ḯ Ḱ ḱ Ḳ ḳ Ḵ ḵ
+% \textbf{Greek}
+% ʹ ͵ ͺ ; ΄ ΅ Ά · Έ Ή Ί Ό Ύ Ώ ΐ Α Β Γ Δ Ε Ζ Η Θ Ι Κ Λ Μ Ν Ξ Ο Π Ρ Σ Τ Υ Φ Χ Ψ Ω Ϊ Ϋ ά έ ή ί ΰ α β γ δ ε ζ η θ
+% \textbf{Cyrillic}
+% Ё Ђ Ѓ Є Ѕ І Ї Ј Љ Њ Ћ Ќ Ў Џ А Б В Г Д Е Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я а б в г д е ж з
+% \textbf{Hebrew}
+% א ב ג ד ה ו ז ח ט י ך כ ל ם מ ן נ ס ע ף פ ץ צ ק ר ש ת װ ױ ײ ֝ ֞ ֟ ֠ ֡ ֣ ֤ ֥ ֦ ֧ ֨ ֩ ֪ ֫ ֬ ֭ ֮ ֯ ְ ֱ ֒ ֓ ֔
+% \textbf{Armenian}
+% {\UseSecondaryFont
+% Ա Բ Գ Դ Ե Զ Է Ը Թ Ժ Ի Լ Խ Ծ Կ Հ Ձ Ղ Ճ Մ Յ Ն Շ Ո Չ Պ Ջ Ռ Ս Վ Տ Ր Ց Ւ Փ Ք Օ Ֆ ՙ ՚ ՛ ՜ ՝ ՞ ՟ ա բ գ դ ե զ}
+% \textbf{Thai}
+% {\UseSecondaryFont
+% ก ข ฃ ค ฅ ฆ ง จ ฉ ช ซ ฌ ญ ฎ ฏ ฐ ฑ ฒ ณ ด ต ถ ท ธ น บ ป ผ ฝ พ ฟ ภ ม ย ร ฤ ล ฦ ว ศ ษ ส ห ฬ อ ฮ ฯ ะ ั า ำ ิ}
+% \end{Detail}
+
+% % Manual page break.
+% \newpage
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %% THIS IS A SECTION WITH USAGE NOTES %%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% % Declare a new group to limit the scope of \color to this section.
+% \begingroup
+% \color{red}
+
+% \Section
+% {This is a\newline
+% Section\newline
+% With\newline
+% Usage Notes}
+% {This is a Section With Usage Notes (For PDF Bookmark)}
+% {PDF:ThisIsASectionWithUsageNotes:ForPDFLink}
+
+% \SubSection
+% {This is a SubSection}
+% {This is a SubSection (For PDF Bookmark)}
+% {PDF:ThisIsASubSection:ForPDFLink}
+
+% \Gap
+% \BulletItem
+% Use \CodeCommand{Section\{a\}\{b\}\{c\}} and
+% \CodeCommand{SubSection\{a\}\{b\}\{c\}}
+% to create sections and subsections, where
+% \Code{a} is the heading displayed on the page,
+% \Code{b} is the PDF bookmark heading, and
+% \Code{c} is the internal PDF link (must be unique).
+% Sections and subsections will appear in the PDF bookmarks.
+% Note the CamelCase command names.
+
+% \Gap
+% \BulletItem
+% Use
+% \CodeCommand{Entry},
+% \CodeCommand{BulletItem},
+% \CodeCommand{SubBulletItem},
+% \CodeCommand{Item},
+% \CodeCommand{SubItem},
+% \CodeCommand{NumberedItem},
+% etc.,
+% to create entries in the main body of the CV.
+
+% \Gap
+% \BulletItem
+% Enclose entry details between
+% \CodeCommand{begin\{Detail\}} and
+% \CodeCommand{end\{Detail\}}
+% so that they are typeset in a smaller font.
+% \begin{Detail}
+% \Item
+% This is an example of entry detail text enclosed in a \Code{Detail} environment.
+% \end{Detail}
+
+% \Gap
+% \BulletItem
+% Use \CodeCommand{Gap} and \CodeCommand{BigGap} to insert vertical spaces between entries to improve layout.
+
+% \BigGap
+% \SubSection
+% {This is Another SubSection}
+% {This is Another Subsection (For PDF Bookmark)}
+% {PDF:ThisIsAnotherSubSection:ForPDFLink}
+
+% \Gap
+% \Entry
+% This is a plain \CodeCommand{Entry},
+% followed by an \CodeCommand{hfill} and a date range
+% \hfill
+% \DatestampYM{2015}{10} --
+% \DatestampYM{2015}{12}
+
+% \Gap
+% \BulletItem
+% This is a \CodeCommand{BulletItem}.
+% \Item
+% This is an \CodeCommand{Item}, which has no bullet.
+% Note the alignment with the \CodeCommand{BulletItem} above.
+
+% \Gap
+% \SubBulletItem
+% This is a \CodeCommand{SubBulletItem}.
+% \SubItem
+% This is a \CodeCommand{SubItem}, which has no bullet.
+% Note the alignment with the \CodeCommand{SubBulletItem} above.
+
+% \Gap
+% \NumberedItem{[42]}
+% This is a \CodeCommand{NumberedItem}.
+% Change the value of the macro \CodeCommand{MaxNumberedItem} to adjust the indentation width.
+
+% \BigGap
+% \SubSection
+% {Line, Paragraph, and Page Breaks}
+% {Line, Paragraph, and Page Breaks (For PDF Bookmark)}
+% {PDF:LineParagraphAndPageBreaks:ForPDFLink}
+
+% \Gap
+% \BulletItem
+% To create a new line within the same paragraph (i.e., preserving the same paragraph indentation), use \CodeCommand{newline} instead of \CodeCommand{\textbackslash};
+% the latter will reset the paragraph indentation.
+
+% \Gap
+% \BulletItem
+% To create a new paragraph, use \CodeCommand{par} or simply leave an empty line.
+% Paragraph indentations (from
+% \CodeCommand{Entry},
+% \CodeCommand{BulletItem},
+% \CodeCommand{SubBulletItem},
+% \CodeCommand{Item},
+% \CodeCommand{SubItem},
+% \CodeCommand{NumberedItem},
+% etc.) do not carry across different paragraphs.
+
+% \Gap
+% \BulletItem
+% To create a new page, use \CodeCommand{newpage}.
+
+% \BigGap
+% \SubSection
+% {Dates}
+% {Dates (For PDF Bookmark)}
+% {PDF:Dates:ForPDFLink}
+
+% \Gap
+% \BulletItem
+% Use the following macros to specify and display dates consistently:
+% \SubBulletItem
+% \CodeCommand{DatestampYMD\{yyyy\}\{MM\}\{dd\}}
+% (e.g., \CodeCommand{DatestampYMD\{2008\}\{01\}\{15\}})
+% \SubBulletItem
+% \CodeCommand{DatestampYM\{yyyy\}\{MM\}}
+% (e.g., \CodeCommand{DatestampYM\{2008\}\{01\}})
+% \SubBulletItem
+% \CodeCommand{DatestampY\{yyyy\}}
+% (e.g., \CodeCommand{DatestampY\{2008\}})
+
+% \Gap
+% \BulletItem
+% Change the date format option passed to the document class to adjust how dates are displayed throughout the document:
+% \SubBulletItem
+% \Code{MMMyyyy} (``Jan~2008'')
+% \SubBulletItem
+% \Code{ddMMMyyyy} (``15~Jan~2008'')
+% \SubBulletItem
+% \Code{MMMMyyyy} (``January~2008'')
+% \SubBulletItem
+% \Code{ddMMMMyyyy} (``15~January~2008'')
+% \SubBulletItem
+% \Code{yyyyMMdd} (``2008-01-15'')
+% \SubBulletItem
+% \Code{yyyyMM} (``2008-01'')
+% \SubBulletItem
+% \Code{yyyy} (``2008'')
+
+% \endgroup
+
+
+
+\end{Body}
+
+%%%%%%%%%%%
+% CV NOTE %
+%%%%%%%%%%%
+
+\UseNoteFont%
+\null\hfill%
+[\textit{\CVNote}]
+
+\end{document}

@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Ph.D. candidate in <a href='https://gsds.kaist.ac.kr'>Graduate School of Data Science</a> at <a href='https://kaist.ac.kr'>KAIST</a>.
+subtitle: Ph.D. candidate at <a href='https://kaist.ac.kr'>KAIST</a> · Geometry-aware neural operators for 3D physical systems.
 
 profile:
   align: right
