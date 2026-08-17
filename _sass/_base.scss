@@ -583,18 +583,23 @@ footer.sticky-bottom {
   }
 
   .pub-nav {
-    text-align: center;
+    // Flex + gap rather than horizontal margins: the pills wrap on narrow
+    // screens, and `gap` is what keeps the rows from touching when they do.
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
     margin-bottom: 1.5rem;
 
     a {
       display: inline-block;
-      margin: 0 0.4rem;
       padding: 0.2rem 1rem;
       border: 1px solid var(--global-theme-color);
       border-radius: 20px;
       color: var(--global-theme-color);
       font-size: 0.9rem;
       text-decoration: none;
+      white-space: nowrap;
 
       &:hover {
         background-color: var(--global-theme-color);
@@ -610,6 +615,18 @@ footer.sticky-bottom {
       &:hover {
         background-color: var(--global-selected-color);
         color: $white-color;
+      }
+    }
+
+    // Shrink the pills so all four still fit on one line on a phone.
+    // Must stay below the `a` rules above: a media query adds no specificity,
+    // so it only wins by coming later in the stylesheet.
+    @media (max-width: 576px) {
+      gap: 0.35rem;
+
+      a {
+        padding: 0.2rem 0.7rem;
+        font-size: 0.78rem;
       }
     }
   }
@@ -681,7 +698,9 @@ footer.sticky-bottom {
       }
 
       .abbr {
-        height: 2rem;
+        // min-height, not height: a two-line badge must be able to grow instead
+        // of spilling out of the box.
+        min-height: 2rem;
         margin-bottom: 0.5rem;
 
         abbr {
@@ -695,6 +714,14 @@ footer.sticky-bottom {
           font-weight: 700;
           letter-spacing: 0.4px;
           text-transform: uppercase;
+          // Bootstrap's .badge sets `white-space: nowrap`, which makes long venue
+          // names ("Water Research") overrun the narrow col-sm-2 and land on top
+          // of the title. Let them wrap inside the column instead; break-word is
+          // the fallback for single words with no space to wrap at.
+          max-width: 100%;
+          white-space: normal;
+          overflow-wrap: break-word;
+          line-height: 1.25;
 
           a {
             color: var(--global-theme-color) !important;
