@@ -117,12 +117,15 @@
 <p style="font-size: 0.9em; color: gray;">* Equal Contribution    † Co-corresponding author</p>
 
 <div class="pub-nav">
+  <a href="#selected">Selected</a>
   <a href="#conference">Conference</a>
   <a href="#journal">Journal</a>
   <a href="#workshop">Workshop</a>
 </div>
 
-<h2 class="category-header" id="conference">Conference</h2>
+<div class="selected-pubs">
+
+<h2 class="category-header" id="selected">Selected</h2>
 
 <ol class="bibliography">
 <li>
@@ -149,8 +152,8 @@
     <div class="periodical">
       <em>Forty-Third International Conference on Machine Learning (ICML)</em>, 2026
     </div>
-    <div class="periodical">
-      
+    <div class="periodical pub-note">
+      Also presented at the ICLR 2026 Workshop on AI and Partial Differential Equations (AI&amp;PDE) <span style="color:#FF0000">(Oral)</span>
     </div>
 
     <!-- Links/Buttons -->
@@ -175,12 +178,12 @@
 <li>
 <!-- _layouts/bib.html -->
 <div class="row">
-  <div class="col-sm-2 abbr"><abbr class="badge">NeurIPS</abbr></div>
+  <div class="col-sm-2 abbr"><abbr class="badge">Water Research</abbr></div>
 
   <!-- Entry bib key -->
-  <div id="Lee2025disentangle" class="col-sm-8 pub-content">
+  <div id="Choe2026gnopb" class="col-sm-8 pub-content">
     <!-- Title -->
-    <div class="title">Disentangling Hyperedges through the lens of Category Theory</div>
+    <div class="title">Physics-Embedded Graph Neural Operator for Interaction-Controlled Colloidal Aggregation</div>
     <!-- Author -->
     <div class="author">
       
@@ -188,16 +191,16 @@
       
       <!--  -->
       
-      Yoonho Lee, Junseok Lee, Sangwoo Seo, <em>Sungwon Kim</em>, Yeongmin Kim, and Chanyoung Park</div>
+      Yongjoon Choe*, <em>Sungwon Kim*</em>, Susan E. Burns†, and Chanyoung Park†</div>
 
     <!-- Journal/Book title and date -->
     
     
     <div class="periodical">
-      <em>The Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS)</em>, 2025
+      <em>Water Research</em>, 2026
     </div>
-    <div class="periodical">
-      
+    <div class="periodical pub-note">
+      Also presented at the KDD 2026 Workshop on Reliable Scientific Foundation Models (RelSciFM) <span style="color:#FF0000">(Best Paper Award)</span>
     </div>
 
     <!-- Links/Buttons -->
@@ -206,11 +209,27 @@
         <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
         <div class="abstract-tooltip">
           <button class="abstract-close" aria-label="Close">×</button>
-          <p>Despite the promising results of disentangled representation learning in discovering latent patterns in graph-structured data, few studies have explored disentanglement for hypergraph-structured data. Integrating hyperedge disentanglement into hypergraph neural networks enables models to leverage hidden hyperedge semantics, such as unannotated relations between nodes, that are associated with labels. This paper presents an analysis of hyperedge disentanglement from a category-theoretical perspective and proposes a novel criterion for disentanglement derived from the naturality condition. Our proof-of-concept model experimentally showed the potential of the proposed criterion by successfully capturing functional relations of genes (nodes) in genetic pathways (hyperedges).</p>
+          <p>Colloidal aggregation in natural and engineered waters is a complex function of both particle
+  and groundwater electrochemical conditions, yet predicting aggregation behavior across
+  diffusion-limited and reaction-limited regimes remains challenging due to the nonlinear
+  dependence of collision efficiency on ionic strength and surface potential. This study presents
+  a graph neural operator surrogate model that captures particle aggregation dynamics by
+  embedding transport physics directly into the network architecture. Particle size classes are
+  represented as graph nodes with Brownian collision kernels encoded in edge features, while
+  attention mechanisms conditioned on ionic strength and zeta potential learn collision efficiency
+  variations governed by extended DLVO interactions. The proposed model predicts aggregation
+  kinetics across a range of electrochemical conditions, achieving R2 &gt; 0.99 for both held-out
+  parameter combinations and temporal extrapolation, and outperforming baseline models that
+  do not embed physics in the architecture, as well as loss-based, physics-regularized neural
+  networks. Validation against experimental measurements from bacteriophage, polystyrene, and
+  cerium oxide systems confirms reproduction of aggregation regime transitions and kinetic
+  saturation. Attention analysis reveals physically consistent reorganization from multiple
+  information pathways under strong electrostatic repulsion to integrated processing under weak
+  repulsion. This framework enables rapid, physically grounded exploration of colloidal
+  aggregation relevant to water quality prediction and treatment optimization.</p>
         </div>
       </span>
-      <a href="https://arxiv.org/abs/2510.16289" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
-      <a href="https://github.com/Yoonho-Lee-AI4Science/Natural-HNN" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+      <a href="https://github.com/sung-won-kim/GNOPB" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
     </div>
     
     <div class="badges">
@@ -244,7 +263,7 @@
     <div class="periodical">
       <em>Forty-Second International Conference on Machine Learning (ICML)</em>, 2025
     </div>
-    <div class="periodical">
+    <div class="periodical pub-note">
       
     </div>
 
@@ -292,8 +311,208 @@
     <div class="periodical">
       <em>The Thirteenth International Conference on Learning Representations (ICLR) <span style="color:#FF0000">(Oral)</span></em>, 2025
     </div>
-    <div class="periodical">
+    <div class="periodical pub-note">
+      Also presented at the KDD 2024 Workshop on Federated Learning for Data Mining and Graph Analytics (FedKDD) <span style="color:#FF0000">(Best Paper Award)</span>
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <span class="abstract-wrapper">
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+        <div class="abstract-tooltip">
+          <button class="abstract-close" aria-label="Close">×</button>
+          <p>Federated Learning (FL) on graphs enables collaborative model training to enhance performance without compromising the privacy of each client. However, existing methods often overlook the mutable nature of graph data, which frequently introduces new nodes and leads to shifts in label distribution. Since they focus solely on performing well on each client’s local data, they are prone to overfitting to their local distributions (i.e., local overfitting), which hinders their ability to generalize to unseen data with diverse label distributions. In contrast, our proposed method, FedLoG, effectively tackles this issue by mitigating local overfitting. Our model generates global synthetic data by condensing the reliable information from each class representation and its structural information across clients. Using these synthetic data as a training set, we alleviate the local overfitting problem by adaptively generalizing the absent knowledge within each local dataset. This enhances the generalization capabilities of local models, enabling them to handle unseen data effectively. Our model outperforms baselines in our proposed experimental settings, which are designed to measure generalization power to unseen data in practical scenarios.</p>
+        </div>
+      </span>
+      <a href="https://www.arxiv.org/abs/2503.03995" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+      <a href="https://github.com/sung-won-kim/FedLoG" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+      <a href="https://kaist-dsail.github.io/files/ICLR25_FEDLOG_slide.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Slides</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+      <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
+  </div>
+</div>
+</li>
+</ol>
+
+</div>
+
+<details class="pub-section">
+<summary><h2 class="category-header" id="conference">Conference</h2></summary>
+
+<ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 abbr"><abbr class="badge">ICML</abbr></div>
+
+  <!-- Entry bib key -->
+  <div id="Kim2026eqginoicml" class="col-sm-8 pub-content">
+    <!-- Title -->
+    <div class="title">EqGINO: Equivariant Geometry-Informed Fourier Neural Operators for 3D PDEs</div>
+    <!-- Author -->
+    <div class="author">
       
+
+      
+      <!--  -->
+      
+      <em>Sungwon Kim</em>, Juho Song, Seungmin Shin, Guimok Cho, Sangkook Kim, and Chanyoung Park</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>Forty-Third International Conference on Machine Learning (ICML)</em>, 2026
+    </div>
+    <div class="periodical pub-note">
+      Also presented at the ICLR 2026 Workshop on AI and Partial Differential Equations (AI&amp;PDE) <span style="color:#FF0000">(Oral)</span>
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <span class="abstract-wrapper">
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+        <div class="abstract-tooltip">
+          <button class="abstract-close" aria-label="Close">×</button>
+          <p>Deep learning surrogates for 3D Partial Differential Equations (PDEs) often fail to generalize across geometric transformations because they depend heavily on specific coordinate systems. While equivariant networks offer a solution, they typically rely on local operations in the spatial domain, making the global receptive field—essential for PDE dynamics—computationally expensive. Conversely, Fourier Neural Operators (FNOs) efficiently capture global interactions, yet establishing 3D equivariance within them remains impractical due to the prohibitive cost of spectral group convolutions. To bridge this gap, we introduce EqGINO, a geometrically robust framework that enforces isotropy in the spectral domain. By design, EqGINO guarantees exact equivariance to the discrete symmetries inherent to the discretized computational domain. Beyond this discrete guarantee, our structural prior enables effective generalization to arbitrary continuous orientations even with a limited number of SE(3)-transformed training samples. Consequently, our method robustly models coordinate-invariant physical laws on complex irregular 3D geometries.</p>
+        </div>
+      </span>
+      <a href="https://github.com/sung-won-kim/EqGINO" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+      <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 abbr"><abbr class="badge">NeurIPS</abbr></div>
+
+  <!-- Entry bib key -->
+  <div id="Lee2025disentangle" class="col-sm-8 pub-content">
+    <!-- Title -->
+    <div class="title">Disentangling Hyperedges through the lens of Category Theory</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <!--  -->
+      
+      Yoonho Lee, Junseok Lee, Sangwoo Seo, <em>Sungwon Kim</em>, Yeongmin Kim, and Chanyoung Park</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>The Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS)</em>, 2025
+    </div>
+    <div class="periodical pub-note">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <span class="abstract-wrapper">
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+        <div class="abstract-tooltip">
+          <button class="abstract-close" aria-label="Close">×</button>
+          <p>Despite the promising results of disentangled representation learning in discovering latent patterns in graph-structured data, few studies have explored disentanglement for hypergraph-structured data. Integrating hyperedge disentanglement into hypergraph neural networks enables models to leverage hidden hyperedge semantics, such as unannotated relations between nodes, that are associated with labels. This paper presents an analysis of hyperedge disentanglement from a category-theoretical perspective and proposes a novel criterion for disentanglement derived from the naturality condition. Our proof-of-concept model experimentally showed the potential of the proposed criterion by successfully capturing functional relations of genes (nodes) in genetic pathways (hyperedges).</p>
+        </div>
+      </span>
+      <a href="https://arxiv.org/abs/2510.16289" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+      <a href="https://github.com/Yoonho-Lee-AI4Science/Natural-HNN" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+      <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 abbr"><abbr class="badge">ICML</abbr></div>
+
+  <!-- Entry bib key -->
+  <div id="Kim2025temnn" class="col-sm-8 pub-content">
+    <!-- Title -->
+    <div class="title">Thickness-aware E(3)-Equivariant 3D Mesh Neural Networks</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <!--  -->
+      
+      <em>Sungwon Kim</em>, Namkyeong Lee, Yunyoung Doh, Seungmin Shin, Guimok Cho, Seung-Won Jeon, and Chanyoung Park</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>Forty-Second International Conference on Machine Learning (ICML)</em>, 2025
+    </div>
+    <div class="periodical pub-note">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <span class="abstract-wrapper">
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+        <div class="abstract-tooltip">
+          <button class="abstract-close" aria-label="Close">×</button>
+          <p>Mesh-based 3D static analysis methods have recently emerged as efficient alternatives to traditional computational numerical solvers, significantly reducing computational costs and runtime for various physics-based analyses. However, these methods primarily focus on surface topology and geometry, often overlooking the inherent thickness of real-world 3D objects, which exhibits high correlations and similar behavior between opposing surfaces. This limitation arises from the disconnected nature of these surfaces and the absence of internal edge connections within the mesh. In this work, we propose a novel framework, the Thickness-aware E(3)-Equivariant 3D Mesh Neural Network (T-EMNN), that effectively integrates the thickness of 3D objects while maintaining the computational efficiency of surface meshes. Additionally, we introduce data-driven coordinates that encode spatial information while preserving E(3)-equivariance or invariance properties, ensuring consistent and robust analysis. Evaluations on a real-world industrial dataset demonstrate the superior performance of T-EMNN in accurately predicting node-level 3D deformations, effectively capturing thickness effects while maintaining computational efficiency.</p>
+        </div>
+      </span>
+      <a href="http://arxiv.org/abs/2505.21572" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+      <a href="https://kaist-dsail.github.io/files/ICML25_TEMNN_slide.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Slides</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+      <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 abbr"><abbr class="badge">ICLR</abbr></div>
+
+  <!-- Entry bib key -->
+  <div id="Kim2025fedlog" class="col-sm-8 pub-content">
+    <!-- Title -->
+    <div class="title">Subgraph Federated Learning for Local Generalization</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <!--  -->
+      
+      <em>Sungwon Kim</em>, Yoonho Lee, Yunhak Oh, Namkyeong Lee, Sukwon Yun, Junseok Lee, Sein Kim, Carl Yang, and Chanyoung Park</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>The Thirteenth International Conference on Learning Representations (ICLR) <span style="color:#FF0000">(Oral)</span></em>, 2025
+    </div>
+    <div class="periodical pub-note">
+      Also presented at the KDD 2024 Workshop on Federated Learning for Data Mining and Graph Analytics (FedKDD) <span style="color:#FF0000">(Best Paper Award)</span>
     </div>
 
     <!-- Links/Buttons -->
@@ -341,7 +560,7 @@
     <div class="periodical">
       <em>In ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)</em>, 2024
     </div>
-    <div class="periodical">
+    <div class="periodical pub-note">
       
     </div>
 
@@ -390,7 +609,7 @@
     <div class="periodical">
       <em>International Conference on Machine Learning (ICML)</em>, 2024
     </div>
-    <div class="periodical">
+    <div class="periodical pub-note">
       
     </div>
 
@@ -439,7 +658,7 @@
     <div class="periodical">
       <em>The Web Conference (WWW) <span style="color:#FF0000">(Oral)</span></em>, 2024
     </div>
-    <div class="periodical">
+    <div class="periodical pub-note">
       
     </div>
 
@@ -485,7 +704,7 @@
     <div class="periodical">
       <em>In Conference on Neural Information Processing Systems (NeurIPS) <span style="color:#FF0000">(Gold Prize at the 2023 Samsung Humantech Paper Award)</span></em>, 2023
     </div>
-    <div class="periodical">
+    <div class="periodical pub-note">
       
     </div>
 
@@ -533,7 +752,7 @@
     <div class="periodical">
       <em>In Conference on Neural Information Processing Systems (NeurIPS)</em>, 2023
     </div>
-    <div class="periodical">
+    <div class="periodical pub-note">
       
     </div>
 
@@ -581,7 +800,7 @@
     <div class="periodical">
       <em>In ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)</em>, 2023
     </div>
-    <div class="periodical">
+    <div class="periodical pub-note">
       
     </div>
 
@@ -630,7 +849,7 @@
     <div class="periodical">
       <em>In International Conference on Machine Learning (ICML)</em>, 2023
     </div>
-    <div class="periodical">
+    <div class="periodical pub-note">
       
     </div>
 
@@ -657,7 +876,10 @@
 </li>
 </ol>
 
-<h2 class="category-header" id="journal">Journal</h2>
+</details>
+
+<details class="pub-section">
+<summary><h2 class="category-header" id="journal">Journal</h2></summary>
 
 <ol class="bibliography">
 <li>
@@ -684,8 +906,8 @@
     <div class="periodical">
       <em>Water Research</em>, 2026
     </div>
-    <div class="periodical">
-      
+    <div class="periodical pub-note">
+      Also presented at the KDD 2026 Workshop on Reliable Scientific Foundation Models (RelSciFM) <span style="color:#FF0000">(Best Paper Award)</span>
     </div>
 
     <!-- Links/Buttons -->
@@ -748,7 +970,7 @@
     <div class="periodical">
       <em>Bioinformatics (SCI)</em>, 2023
     </div>
-    <div class="periodical">
+    <div class="periodical pub-note">
       
     </div>
 
@@ -774,9 +996,77 @@
 </li>
 </ol>
 
-<h2 class="category-header" id="workshop">Workshop</h2>
+</details>
+
+<details class="pub-section">
+<summary><h2 class="category-header" id="workshop">Workshop</h2></summary>
 
 <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 abbr"><abbr class="badge">KDD Workshop</abbr></div>
+
+  <!-- Entry bib key -->
+  <div id="Choe2026gnopbwork" class="col-sm-8 pub-content">
+    <!-- Title -->
+    <div class="title">Physics-Embedded Graph Neural Operator for Interaction-Controlled Colloidal Aggregation</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <!--  -->
+      
+      Yongjoon Choe*, <em>Sungwon Kim*</em>, Susan E. Burns†, and Chanyoung Park†</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>KDD 2026 Workshop on Reliable Scientific Foundation Models (RelSciFM 2026) <span style="color:#FF0000">(<a href="/assets/pdf/RelSciFM_best_paper.pdf" style="color:#FF0000">Best Paper Award</a>)</span></em>, 2026
+    </div>
+    <div class="periodical pub-note">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <span class="abstract-wrapper">
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+        <div class="abstract-tooltip">
+          <button class="abstract-close" aria-label="Close">×</button>
+          <p>Colloidal aggregation in natural and engineered waters is a complex function of both particle
+  and groundwater electrochemical conditions, yet predicting aggregation behavior across
+  diffusion-limited and reaction-limited regimes remains challenging due to the nonlinear
+  dependence of collision efficiency on ionic strength and surface potential. This study presents
+  a graph neural operator surrogate model that captures particle aggregation dynamics by
+  embedding transport physics directly into the network architecture. Particle size classes are
+  represented as graph nodes with Brownian collision kernels encoded in edge features, while
+  attention mechanisms conditioned on ionic strength and zeta potential learn collision efficiency
+  variations governed by extended DLVO interactions. The proposed model predicts aggregation
+  kinetics across a range of electrochemical conditions, achieving R2 &gt; 0.99 for both held-out
+  parameter combinations and temporal extrapolation, and outperforming baseline models that
+  do not embed physics in the architecture, as well as loss-based, physics-regularized neural
+  networks. Validation against experimental measurements from bacteriophage, polystyrene, and
+  cerium oxide systems confirms reproduction of aggregation regime transitions and kinetic
+  saturation. Attention analysis reveals physically consistent reorganization from multiple
+  information pathways under strong electrostatic repulsion to integrated processing under weak
+  repulsion. This framework enables rapid, physically grounded exploration of colloidal
+  aggregation relevant to water quality prediction and treatment optimization.</p>
+        </div>
+      </span>
+      <a href="https://github.com/sung-won-kim/GNOPB" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+      <a href="https://kdd26-relscifm.github.io" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Website</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+      <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
+  </div>
+</div>
+</li>
 <li>
 <!-- _layouts/bib.html -->
 <div class="row">
@@ -801,7 +1091,7 @@
     <div class="periodical">
       <em>ICLR 2026 Workshop on AI and Partial Differential Equations (AI&amp;PDE) <span style="color:#FF0000">(Oral)</span></em>, 2026
     </div>
-    <div class="periodical">
+    <div class="periodical pub-note">
       
     </div>
 
@@ -849,7 +1139,7 @@
     <div class="periodical">
       <em>ICLR 2025 Workshop on Machine Learning for Genomics Explorations (MLGenX)</em>, 2025
     </div>
-    <div class="periodical">
+    <div class="periodical pub-note">
       
     </div>
 
@@ -888,7 +1178,7 @@
     <div class="periodical">
       <em>KDD Workshop on Federated Learning for Data Mining and Graph Analytics (FedKDD 2024) <span style="color:#FF0000">(Best Paper Award)</span></em>, 2024
     </div>
-    <div class="periodical">
+    <div class="periodical pub-note">
       
     </div>
 
@@ -932,7 +1222,7 @@
     <div class="periodical">
       <em>KDD 2024 Workshop on Human-Interpretable AI (HI-AI 2024) <span style="color:#FF0000">(Best Paper Award)</span></em>, 2024
     </div>
-    <div class="periodical">
+    <div class="periodical pub-note">
       
     </div>
 
@@ -971,7 +1261,7 @@
     <div class="periodical">
       <em>ICML Workshop on Computational Biology (WCB 2023)</em>, 2023
     </div>
-    <div class="periodical">
+    <div class="periodical pub-note">
       
     </div>
 
@@ -1019,7 +1309,7 @@
     <div class="periodical">
       <em>In ICLR Workshop on Machine Learning for Materials (ML4Materials)</em>, 2023
     </div>
-    <div class="periodical">
+    <div class="periodical pub-note">
       
     </div>
 
@@ -1045,7 +1335,34 @@
 </li>
 </ol>
 
+</details>
+
 </div>
+
+<script>
+  // The nav pills point at headings that live inside a collapsed <details>,
+  // so open the target section before the browser jumps to it.
+  (function () {
+    function revealTarget(hash) {
+      if (!hash || hash.length < 2) return;
+      var target = document.getElementById(hash.slice(1));
+      var section = target && target.closest('details.pub-section');
+      if (section) section.open = true;
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.pub-nav a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          revealTarget(link.getAttribute('href'));
+        });
+      });
+      revealTarget(window.location.hash);
+    });
+    window.addEventListener('hashchange', function () {
+      revealTarget(window.location.hash);
+    });
+  })();
+</script>
+
 
           </article>
 
@@ -1056,7 +1373,7 @@
 
   <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
-        © Copyright 2026 Sungwon  Kim. Last updated: June 15, 2026.
+        © Copyright 2026 Sungwon  Kim. Last updated: August 17, 2026.
       </div>
     </footer>
 
