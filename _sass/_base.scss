@@ -1337,6 +1337,12 @@ nav[data-toggle="toc"] {
   }
 }
 
+/* Sponsor / grant accent (NVIDIA brand green) */
+.nvidia-highlight {
+  color: var(--global-nvidia-color);
+  font-weight: 600;
+}
+
 @media (max-width: 576px) {
   .news .news-timeline {
     padding-left: 1.5rem;

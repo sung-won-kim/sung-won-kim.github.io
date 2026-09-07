@@ -20,6 +20,9 @@
   // Accent used to set the "Selected" publications apart from the other sections.
   --global-selected-color: #8C6D1F;
 
+  // NVIDIA brand green, darkened so it stays legible on the light background.
+  --global-nvidia-color: #{$nvidia-color-dark};
+
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;
@@ -69,6 +72,9 @@ html[data-theme='dark'] {
 
   // Lighter so it stays legible on the dark background.
   --global-selected-color: #C2A661;
+
+  // Full-strength NVIDIA brand green on the dark background.
+  --global-nvidia-color: #{$nvidia-color};
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
