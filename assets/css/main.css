@@ -20,6 +20,7 @@
   --global-divider-color: rgba(0, 0, 0, .1);
   --global-card-bg-color: #ffffff;
   --global-selected-color: #8C6D1F;
+  --global-nvidia-color: #4F7C00;
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;
@@ -63,6 +64,7 @@ html[data-theme=dark] {
   --global-divider-color: #424246;
   --global-card-bg-color: #212529;
   --global-selected-color: #C2A661;
+  --global-nvidia-color: #76B900;
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;
@@ -1206,6 +1208,12 @@ nav[data-toggle=toc] .nav-link.active:hover {
 }
 .news .news-text a:hover {
   text-decoration: underline;
+}
+
+/* Sponsor / grant accent (NVIDIA brand green) */
+.nvidia-highlight {
+  color: var(--global-nvidia-color);
+  font-weight: 600;
 }
 
 @media (max-width: 576px) {
