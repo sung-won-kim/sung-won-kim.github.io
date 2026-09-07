@@ -22,8 +22,26 @@ $light-purple-color: lighten($purple-color, 25%);
 $pink-color: #f92080 !default;
 $pink-color-light: #ffdddd !default;
 $yellow-color: #efcc00 !default;
+// Brand accents used to highlight sponsors in news items. Each brand needs two
+// values: one legible on the light background and one on the dark. _themes.scss
+// picks between them; see there for which is used where.
 $nvidia-color: #76B900 !default;      // NVIDIA brand green
-$nvidia-color-dark: #4F7C00 !default; // darkened, legible on the light background
+$nvidia-color-dark: #4F7C00 !default;
+
+$synopsys-color: #5A2A82 !default;       // Synopsys brand purple (as used in their logo)
+$synopsys-color-text: #7A3CB8 !default;  // lifted: the raw brand purple reads as black on the light background
+$synopsys-color-light: #AA75D7 !default; // lightened for the dark background
+
+// Google logo colors, and Google's own text-safe (Material 700/900) variants.
+$google-blue: #4285F4 !default;
+$google-red: #EA4335 !default;
+$google-yellow: #FBBC05 !default;
+$google-green: #34A853 !default;
+$google-blue-dark: #1967D2 !default;
+$google-red-dark: #C5221F !default;
+$google-yellow-dark: #E37400 !default;
+$google-green-dark: #188038 !default;
+$google-red-bright: #EE675C !default; // nudged lighter so it clears AA on dark
 // $kaist-color : rgb(39, 69, 140) !default;
 $kaist-color : rgb(11, 83, 148) !default;
 

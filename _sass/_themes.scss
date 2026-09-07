@@ -20,8 +20,13 @@
   // Accent used to set the "Selected" publications apart from the other sections.
   --global-selected-color: #8C6D1F;
 
-  // NVIDIA brand green, darkened so it stays legible on the light background.
+  // Sponsor brand accents, darkened where needed for the light background.
   --global-nvidia-color: #{$nvidia-color-dark};
+  --global-synopsys-color: #{$synopsys-color-text};
+  --global-google-blue: #{$google-blue-dark};
+  --global-google-red: #{$google-red-dark};
+  --global-google-yellow: #{$google-yellow-dark};
+  --global-google-green: #{$google-green-dark};
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
@@ -73,8 +78,13 @@ html[data-theme='dark'] {
   // Lighter so it stays legible on the dark background.
   --global-selected-color: #C2A661;
 
-  // Full-strength NVIDIA brand green on the dark background.
+  // Sponsor brand accents at (near) full strength on the dark background.
   --global-nvidia-color: #{$nvidia-color};
+  --global-synopsys-color: #{$synopsys-color-light};
+  --global-google-blue: #{$google-blue};
+  --global-google-red: #{$google-red-bright};
+  --global-google-yellow: #{$google-yellow};
+  --global-google-green: #{$google-green};
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
