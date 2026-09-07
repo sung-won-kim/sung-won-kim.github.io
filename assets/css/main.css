@@ -21,6 +21,11 @@
   --global-card-bg-color: #ffffff;
   --global-selected-color: #8C6D1F;
   --global-nvidia-color: #4F7C00;
+  --global-synopsys-color: #7A3CB8;
+  --global-google-blue: #1967D2;
+  --global-google-red: #C5221F;
+  --global-google-yellow: #E37400;
+  --global-google-green: #188038;
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;
@@ -65,6 +70,11 @@ html[data-theme=dark] {
   --global-card-bg-color: #212529;
   --global-selected-color: #C2A661;
   --global-nvidia-color: #76B900;
+  --global-synopsys-color: #AA75D7;
+  --global-google-blue: #4285F4;
+  --global-google-red: #EE675C;
+  --global-google-yellow: #FBBC05;
+  --global-google-green: #34A853;
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;
@@ -1210,10 +1220,37 @@ nav[data-toggle=toc] .nav-link.active:hover {
   text-decoration: underline;
 }
 
-/* Sponsor / grant accent (NVIDIA brand green) */
+/* Sponsor brand accents used in news items. */
+.nvidia-highlight,
+.synopsys-highlight,
+.google-wordmark {
+  font-weight: 600;
+}
+
 .nvidia-highlight {
   color: var(--global-nvidia-color);
-  font-weight: 600;
+}
+
+.synopsys-highlight {
+  color: var(--global-synopsys-color);
+}
+
+/* Google wordmark: one span per letter, in the logo's own color order
+   (G blue, o red, o yellow, g blue, l green, e red). */
+.google-wordmark {
+  white-space: nowrap;
+}
+.google-wordmark .g-b {
+  color: var(--global-google-blue);
+}
+.google-wordmark .g-r {
+  color: var(--global-google-red);
+}
+.google-wordmark .g-y {
+  color: var(--global-google-yellow);
+}
+.google-wordmark .g-g {
+  color: var(--global-google-green);
 }
 
 @media (max-width: 576px) {
