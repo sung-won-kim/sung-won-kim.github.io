@@ -28,6 +28,9 @@ $yellow-color: #efcc00 !default;
 $nvidia-color: #76B900 !default;      // NVIDIA brand green
 $nvidia-color-dark: #4F7C00 !default;
 
+$caltech-color: #FF7A1F !default;      // Caltech brand orange (PMS 158), brightened for the dark background
+$caltech-color-text: #E35205 !default; // lightly darkened so it still reads on the light background
+
 $synopsys-color: #5A2A82 !default;       // Synopsys brand purple (as used in their logo)
 $synopsys-color-text: #7A3CB8 !default;  // lifted: the raw brand purple reads as black on the light background
 $synopsys-color-light: #AA75D7 !default; // lightened for the dark background

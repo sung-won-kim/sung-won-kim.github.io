@@ -1339,6 +1339,7 @@ nav[data-toggle="toc"] {
 
 /* Sponsor brand accents used in news items. */
 .nvidia-highlight,
+.caltech-highlight,
 .synopsys-highlight,
 .google-wordmark {
   font-weight: 600;
@@ -1346,6 +1347,10 @@ nav[data-toggle="toc"] {
 
 .nvidia-highlight {
   color: var(--global-nvidia-color);
+}
+
+.caltech-highlight {
+  color: var(--global-caltech-color);
 }
 
 .synopsys-highlight {

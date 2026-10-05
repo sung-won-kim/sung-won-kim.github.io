@@ -22,6 +22,7 @@
 
   // Sponsor brand accents, darkened where needed for the light background.
   --global-nvidia-color: #{$nvidia-color-dark};
+  --global-caltech-color: #{$caltech-color-text};
   --global-synopsys-color: #{$synopsys-color-text};
   --global-google-blue: #{$google-blue-dark};
   --global-google-red: #{$google-red-dark};
@@ -80,6 +81,7 @@ html[data-theme='dark'] {
 
   // Sponsor brand accents at (near) full strength on the dark background.
   --global-nvidia-color: #{$nvidia-color};
+  --global-caltech-color: #{$caltech-color};
   --global-synopsys-color: #{$synopsys-color-light};
   --global-google-blue: #{$google-blue};
   --global-google-red: #{$google-red-bright};
