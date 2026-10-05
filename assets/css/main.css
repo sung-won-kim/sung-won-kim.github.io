@@ -21,6 +21,7 @@
   --global-card-bg-color: #ffffff;
   --global-selected-color: #8C6D1F;
   --global-nvidia-color: #4F7C00;
+  --global-caltech-color: #E35205;
   --global-synopsys-color: #7A3CB8;
   --global-google-blue: #1967D2;
   --global-google-red: #C5221F;
@@ -70,6 +71,7 @@ html[data-theme=dark] {
   --global-card-bg-color: #212529;
   --global-selected-color: #C2A661;
   --global-nvidia-color: #76B900;
+  --global-caltech-color: #FF7A1F;
   --global-synopsys-color: #AA75D7;
   --global-google-blue: #4285F4;
   --global-google-red: #EE675C;
@@ -1222,6 +1224,7 @@ nav[data-toggle=toc] .nav-link.active:hover {
 
 /* Sponsor brand accents used in news items. */
 .nvidia-highlight,
+.caltech-highlight,
 .synopsys-highlight,
 .google-wordmark {
   font-weight: 600;
@@ -1229,6 +1232,10 @@ nav[data-toggle=toc] .nav-link.active:hover {
 
 .nvidia-highlight {
   color: var(--global-nvidia-color);
+}
+
+.caltech-highlight {
+  color: var(--global-caltech-color);
 }
 
 .synopsys-highlight {
